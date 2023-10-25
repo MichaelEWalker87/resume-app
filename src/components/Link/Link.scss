@@ -1,0 +1,15 @@
+@import '../../styles/index';
+
+.link {
+    color: $Gray700; 
+    text-decoration: none;
+
+    &:not(.active):hover {
+        color: $Gray1000;
+    }
+}
+
+.active {
+    color: $Attention-M;
+    text-decoration: underline;  
+}

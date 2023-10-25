@@ -1,0 +1,13 @@
+@import 'styles/index';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+body {
+    margin: 0;
+    background-color: $Primary-H; /* Replace with your desired background color */
+  }
+

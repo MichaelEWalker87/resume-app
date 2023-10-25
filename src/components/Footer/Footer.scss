@@ -1,0 +1,46 @@
+@import '../../styles/index.scss';
+
+    .footer-bar {
+        background-color: $Footer;
+        bottom: 0;
+        width: 100vw;
+        position: fixed;
+        text-align: center;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        height: 90px;
+    }
+    
+    .footer-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .foot-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 11px;
+    }
+
+    .link-image{
+        margin-bottom: -1.5rem;
+        width: 3.2rem;
+        padding-inline: 0.3rem;
+    }
+    
+    .signature{
+        width: 17rem;
+        padding-left: 1rem;
+    }
+
+    .copy-right{
+        color: $Secondary-M;
+        align-self: self-end;
+        @include h4-reg-dm;
+        margin-bottom: 0.55rem;
+    }
