@@ -1,0 +1,16 @@
+.arrow-button {
+    z-index: 12;
+    display: flex;
+    img {
+      cursor: pointer;
+      transition: 0.3s;
+  
+      &.disabled {
+        cursor: not-allowed;
+      }
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }

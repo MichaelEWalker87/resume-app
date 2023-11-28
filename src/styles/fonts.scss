@@ -1,3 +1,13 @@
+@import 'colors';
+
+@mixin h1-about{
+    font-family: 'DM Serif Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 73px;
+}
+
 @mixin h1-bold {
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
@@ -108,4 +118,16 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+}
+
+@mixin wh-cards {
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+    color: $Attention-M; 
+    overflow-wrap: break-word;
+    -webkit-text-stroke: 1px $Gray200;
+    text-stroke: 1px $Gray200;
 }

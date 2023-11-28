@@ -25,7 +25,7 @@ function Footer(props) {
         <Link
             key={link.label}
             to={link.path}
-            className="nav-link"
+            className="foot-link"
             activeClassName="active-link"
         >
             <img 

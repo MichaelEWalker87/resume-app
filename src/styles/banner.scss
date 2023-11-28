@@ -1,0 +1,68 @@
+.union-banners::before,
+.union-banners::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    
+    background-color: $Footer; 
+    z-index: 3; 
+
+
+    @media screen and (min-width: 1365px) and (min-height: 875px) {
+        width: calc((100vw - 146rem) / 2); 
+    }
+    @media screen and (min-width: 1365px) and (max-height: 875px) {
+        width: calc((100vw - 133.5rem) / 2); 
+    }
+}
+
+.union-banners::before {
+    left: 0;
+}
+
+.union-banners::after {
+    right: 0;
+}
+
+
+.skyline-banners::before,
+.skyline-banners::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: calc((100vw - 1645px) / 2); 
+    background-color: $Footer; 
+    z-index: 3; 
+}
+
+.skyline-banners::before {
+    left: 0;
+}
+
+.skyline-banners::after {
+    right: 0;
+}
+
+
+.coors-banners::before,
+.coors-banners::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: calc((100vw - 1645px) / 2); 
+    background-color: $Footer; 
+    z-index: 3; 
+}
+
+.coors-banners::before {
+    left: 0;
+}
+
+.coors-banners::after {
+    right: 0;
+}
+
+

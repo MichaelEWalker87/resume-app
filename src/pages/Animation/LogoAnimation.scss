@@ -78,19 +78,19 @@
         }
 
         @media screen and (min-height:400px) and (max-height: 729px) {
-            animation: logoAnimationMid 4s cubic-bezier(0.002, 0, 1, 1);
+            animation: logoAnimationMid 4s ease-in-out;
         }
         
         @media screen and (min-height:720px) and (max-height: 949px) {
-            animation: logoAnimationMid 4s cubic-bezier(0.002, 0, 1, 1);
+            animation: logoAnimationMid 4s ease-in-out;
         }
 
         @media screen and (min-height:950px) and (max-height: 1080px) {
-            animation: logoAnimationLG 4s cubic-bezier(0.002, 0, 1, 1);
+            animation: logoAnimationLG 4s ease-in-out;
         }
         
         @media screen and (min-height: 1081px) {
-            animation: logoAnimationMax 4s cubic-bezier(0.002, 0, 1, 1);
+            animation: logoAnimationMax 4s ease-in-out;
         }
 
         @media screen and (min-width: 481px) and (max-width: 649px) {
@@ -118,7 +118,7 @@
             padding: 0.625rem;
         }
 
-        @media screen and (min-width: 1364px) {
+        @media screen and (min-width: 1365px) {
             width: 10.5rem;
             padding: 0.625rem;
         }
@@ -150,9 +150,8 @@
             margin-left: -28.25rem;
         }
 
-        @media screen and (min-width: 1364px) {
+        @media screen and (min-width: 1365px) {
             margin-left: -34.5rem;
         }
     }
 
-  

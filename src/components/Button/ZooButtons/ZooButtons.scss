@@ -1,0 +1,68 @@
+@import '../../../styles/index.scss';
+
+.active-zoo{
+}
+
+.zoo-button-img {
+    position: relative;
+}
+  
+.zoo-button-text {
+    position: absolute;
+    width: 10rem;
+    text-align: center;
+    color: $Secondary-H;
+    @include h3-reg-dm;
+}
+
+.product-zoo-button{
+    transform: translate(-50%, -50%);
+    top: 21%;
+    left: 35%;
+}
+
+.design-zoo-button{
+    transform: translate(-50%, -50%);
+    top: 22%;
+    left: 61%;  
+}
+
+.engineering-zoo-button{
+    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 38%;
+}
+
+.all-zoo-button{
+    transform: translate(-50%, -50%);
+    top: 18%;
+    left: 60%;
+}
+
+.product-zoo-button-active{
+    transform: translate(-50%, -50%);
+    top: 64%;
+    left: 35%;
+}
+
+.design-zoo-button-active{
+    transform: translate(-50%, -50%);
+    top: 62%;
+    left: 61%;  
+}
+
+.engineering-zoo-button-active{
+    transform: translate(-50%, -50%);
+    top: 62%;
+    left: 38%;
+}
+
+.all-zoo-button-active{
+    transform: translate(-50%, -50%);
+    top: 62%;
+    left: 60%;
+}
+
+.you-are-here{
+    display: flex;
+}

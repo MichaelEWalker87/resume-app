@@ -1,0 +1,90 @@
+@import '../../styles/index.scss';
+
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+  
+.about-me-outer-container{
+    position: fixed;
+    z-index: 10;
+    background-color: $AboutMe;
+    opacity: 90%;
+    margin-inline: 5rem;
+    padding-inline: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 40px;
+    max-height: 400px; 
+    overflow-y: auto; 
+    max-width: 850px;
+    margin-top: 25rem;
+    animation: fadeInFromTop 2.2s;     
+    clip-path: margin-box;
+}
+
+.about-me-outer-container::-webkit-scrollbar{ 
+    background: transparent; 
+    direction: rtl; 
+    width: 7px;
+}
+
+.about-me-outer-container::-webkit-scrollbar-track{ 
+    background: rgba(69,92,111, 0.4); 
+    border-radius: 5px;
+    margin-top: 30px; 
+    margin-bottom: 28px; 
+    border-radius: 5px;
+}
+
+.about-me-outer-container::-webkit-scrollbar-track-piece{ 
+    background: transparent
+}
+
+.about-me-outer-container::-webkit-scrollbar-thumb{
+    background: rgba(171,9,25, 0.8); 
+    border-radius: 5px;
+}
+
+.about-me-outer-container::-webkit-scrollbar-corner{
+    background: transparent
+}
+
+.about-me-outer-container::-webkit-resizer{ 
+    background: transparent
+}
+
+.about-me-inner-container{
+    margin-bottom: 15rem;
+}
+
+.about-me-title{
+    margin-left: 1rem;
+    @include h1-about;
+    color: $Attention-M
+}
+
+.about-me-image{
+    float: right;
+    width: 14rem;
+    height: auto;
+    margin-inline: 1rem;
+} 
+
+.about-me-body {
+    text-align: justify;
+    margin-inline: 1rem;
+    margin-bottom: 1rem; 
+    @include h4-reg-dm
+}
+

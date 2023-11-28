@@ -1,0 +1,617 @@
+@import '../../../App.scss';
+@import '../../../styles/index.scss';
+
+.background{
+    position: fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(137, 146, 151, 0.8); 
+    z-index: 19; 
+}
+
+.zoomed-container{
+    display: flex;
+    justify-content: center;
+}
+
+
+.job-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.job-dates{
+    @include h4-reg;
+    @media screen and (min-width: 865px) and (max-width: 1124px) {
+        font-size: 14px;
+      @media (min-height: 575px) {
+        @include h4-reg;
+      }
+    }
+    @media screen and (min-width: 1365px) {
+      @media (min-height: 876px) {
+          @include h3-reg;
+      }
+    }
+
+
+
+
+
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+        
+      }
+    
+      @media screen and (min-width: 650px) and (max-width: 785px) {
+        font-size: 16px;
+      }
+    
+      @media screen and (min-width: 786px) and (max-width: 864px) {
+        @include h4-reg;
+        font-size: 14px;
+        line-height: 19px;
+        @media (min-height: 575px) {
+            @include h4-reg;
+            font-size: 16px;
+            line-height: 19px;
+        }
+      }
+    
+      @media screen and (min-width: 1125px) and (max-width: 1364px) {
+      }
+    
+      @media screen and (min-width: 1365px) {
+      }
+    
+      /* Nested media queries for adjusting width based on screen height */
+      @media screen and (min-width: 865px) and (max-width: 1124px) {
+            
+        @media (min-height: 575px) {
+         
+        }
+      }
+    
+      @media screen and (min-width: 1125px) and (max-width: 1364px) {
+       
+        @media (max-height: 639px) and (min-height: 601px) {
+          
+        }
+    
+        @media (min-height: 640px) {
+          
+        }
+      }
+    
+      @media screen and (min-width: 1365px) {
+        @media (max-height: 715px) {
+            @include h4-reg;
+        }
+    
+        @media (max-height: 875px) and (min-height: 715px) {
+            @include h4-bold;
+
+        }
+    
+        @media (min-height: 876px) {
+            @include h3-bold;
+        }
+      }
+}
+
+@mixin responsiveStylesJobTitle($width) {
+    width: $width;
+  }
+
+.job-title{
+    width: 13rem;
+    
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+        @include responsiveStylesJobTitle(13rem);
+      }
+    
+      @media screen and (min-width: 650px) and (max-width: 785px) {
+          @include responsiveStylesJobTitle(10rem);
+          @include h4-reg;
+          font-size: 16px;
+          line-height: 18px; 
+        @media (min-height: 575px) {
+            @include responsiveStylesJobTitle(12rem);
+            @include h4-reg;
+            line-height: 19px; 
+        }
+      }
+    
+      @media screen and (min-width: 786px) and (max-width: 864px) {
+        @include responsiveStylesJobTitle(9rem);
+        @include h4-reg;
+        font-size: 14px;
+        line-height: 19px; 
+        @media (min-height: 575px) {
+            @include responsiveStylesJobTitle(9rem);
+            @include h4-reg;
+            font-size: 16px;
+            line-height: 19px; 
+        }
+      }
+    
+      @media screen and (min-width: 1125px) and (max-width: 1364px) {
+        @include responsiveStylesJobTitle(13rem);
+      }
+    
+      @media screen and (min-width: 1365px) {
+        @include responsiveStylesJobTitle(13rem);
+      }
+    
+      /* Nested media queries for adjusting width based on screen height */
+      @media screen and (min-width: 865px) and (max-width: 1124px) {
+          @include responsiveStylesJobTitle(9rem);
+          @include h4-reg;
+          font-size: 14px;
+          line-height: 19px;    
+        @media (min-height: 575px) {
+          @include responsiveStylesJobTitle(11.5rem);
+          @include h4-reg;
+          line-height: 23px;
+        }
+      }
+    
+      @media screen and (min-width: 1125px) and (max-width: 1364px) {
+          @include responsiveStylesJobTitle(12rem);
+          @include h4-reg;
+          line-height: 23px;
+        @media (max-height: 639px) and (min-height: 601px) {
+          @include responsiveStylesJobTitle(12.5rem);
+          @include h4-reg;
+          line-height: 23px;
+        }
+    
+        @media (min-height: 640px) {
+          @include responsiveStylesJobTitle(12.5rem);
+          @include h4-reg;
+          line-height: 23px;
+        }
+      }
+    
+      @media screen and (min-width: 1365px) {
+        @media (max-height: 715px) {
+          @include responsiveStylesJobTitle(12.5rem);
+          @include h4-reg;
+          line-height: 23px;
+        }
+    
+        @media (max-height: 875px) and (min-height: 715px) {
+          @include responsiveStylesJobTitle(13rem);
+          @include h4-bold;
+        }
+    
+        @media (min-height: 876px) {
+          @include responsiveStylesJobTitle(13rem);
+          @include h3-bold;
+        }
+      }
+}
+
+
+
+.job-description{
+    margin-top: 0;
+    background: #FFFEFD;
+    padding-inline: 8px;
+    @include h4-reg;
+    @media screen and (max-width: 865px) {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    @media screen and (min-width: 865px) and (max-width: 1124px) {
+        font-size: 14px;
+        line-height: 28px;
+      @media (min-height: 575px) {
+        @include h4-reg;
+      }
+    }
+      @media screen and (min-width: 1365px) {
+        @media (min-height: 876px) {
+            @include h3-reg;
+        }
+      }
+
+}
+
+@mixin responsiveStylesJobTitleDateContainer($bottom, $gap) {
+    bottom: $bottom;
+    gap: $gap;
+}
+
+.job-title-date-container{
+    position: fixed;
+    display: flex;
+    place-items: center;
+    
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+        @include responsiveStylesJobTitleDateContainer(39.75rem, 4rem);
+      }
+    
+      @media screen and (min-width: 650px) and (max-width: 785px) {
+        @include responsiveStylesJobTitleDateContainer(24.2rem, 0rem);
+        @media (min-height: 575px) {
+            @include responsiveStylesJobTitleDateContainer(26.85rem, 0rem);
+        }
+      }
+    
+      @media screen and (min-width: 786px) and (max-width: 864px) {
+        @include responsiveStylesJobTitleDateContainer(22.85rem, 0rem);
+        @media (min-height: 575px) {
+            @include responsiveStylesJobTitleDateContainer(27.85rem, 2rem);
+        }
+      }
+    
+      /* Nested media queries for adjusting width based on screen height */
+      @media screen and (min-width: 865px) and (max-width: 1124px) {
+          @include responsiveStylesJobTitleDateContainer(25.85rem, 0rem);
+    
+        @media (min-height: 575px) {
+          @include responsiveStylesJobTitleDateContainer(26.75rem, 0rem);
+        }
+      }
+    
+      @media screen and (min-width: 1125px) and (max-width: 1364px) {
+          @include responsiveStylesJobTitleDateContainer(23.75rem, 0rem);
+        @media (max-height: 639px) and (min-height: 601px) {
+          @include responsiveStylesJobTitleDateContainer(27.75rem, 0rem);
+        }
+    
+        @media (min-height: 640px) {
+          @include responsiveStylesJobTitleDateContainer(30.75rem, 1.5rem);
+        }
+      }
+    
+      @media screen and (min-width: 1365px) {
+        @media (max-height: 715px) {
+          @include responsiveStylesJobTitleDateContainer(27.8rem, 0rem);
+        }
+    
+        @media (max-height: 875px) and (min-height: 715px) {
+          @include responsiveStylesJobTitleDateContainer(32.75rem, 0rem);
+        }
+    
+        @media (min-height: 876px) {
+          @include responsiveStylesJobTitleDateContainer(39.75rem, 4rem);
+        }
+      }
+}
+@mixin responsiveStylesCompanyTitle($bottom, $width) {
+    bottom: $bottom;
+    width: $width;
+  }
+  
+  .company-title {
+    position: fixed;
+    @include responsiveStylesCompanyTitle(43.75rem, 18rem);
+    text-align: center;
+  
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+      @include responsiveStylesCompanyTitle(43.75rem, 18rem);
+    }
+  
+    @media screen and (min-width: 650px) and (max-width: 785px) {
+      @include responsiveStylesCompanyTitle(26.25rem, 13rem);
+      @media (min-height: 575px) {
+          @include responsiveStylesCompanyTitle(29.95rem, 13rem);
+      }
+    }
+  
+    @media screen and (min-width: 786px) and (max-width: 864px) {
+      @include responsiveStylesCompanyTitle(25.75rem, 13rem);
+      @media (min-height: 575px) {
+          @include responsiveStylesCompanyTitle(30.5rem, 13rem);
+      }
+    }
+  
+    /* Nested media queries for adjusting width based on screen height */
+    @media screen and (min-width: 865px) and (max-width: 1124px) {
+        @include responsiveStylesCompanyTitle(27.9rem, 13rem);  
+      @media (min-height: 575px) {
+        @include responsiveStylesCompanyTitle(29.9rem, 13rem);
+      }
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) {
+        @include responsiveStylesCompanyTitle(27rem, 12rem);
+      @media (max-height: 639px) and (min-height: 601px) {
+        @include responsiveStylesCompanyTitle(31rem, 12rem);
+      }
+  
+      @media (min-height: 640px) {
+        @include responsiveStylesCompanyTitle(33.75rem, 13rem);
+        @include h4-bold;
+      }
+    }
+  
+    @media screen and (min-width: 1365px) {
+      @media (max-height: 715px) {
+        @include responsiveStylesCompanyTitle(30.75rem, 13rem);
+        @include h4-bold;
+      }
+  
+      @media (max-height: 875px) and (min-height: 715px) {
+        @include responsiveStylesCompanyTitle(36.25rem, 18rem);
+        @include h3-bold;
+      }
+  
+      @media (min-height: 876px) {
+        @include responsiveStylesCompanyTitle(43.75rem, 18rem);
+        @include h2-bold;
+      }
+    }
+  }
+
+  @mixin responsiveStylesJobDescriptionContainer($bottom, $width, $height, $paddingInline, $paddingBottom) {
+    bottom: $bottom;
+    width: $width;
+    height: $height;
+    padding-inline: $paddingInline;
+    padding-bottom: $paddingBottom;
+  }
+  
+  .job-description-container {
+    position: fixed;
+    place-items: center;
+    overflow-y: auto;
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+        @include responsiveStylesJobDescriptionContainer(7.75rem, 22rem, 31rem, 1rem, 1rem);
+      }
+    
+      @media screen and (min-width: 650px) and (max-width: 785px) {
+        @include responsiveStylesJobDescriptionContainer(2.85rem, 17.3rem, 21rem, 1rem, 1rem);
+        @media (min-height: 575px) {
+            @include responsiveStylesJobDescriptionContainer(2.85rem, 18.25rem, 23.25rem, 1rem, 1rem);
+        }
+      }
+    
+      @media screen and (min-width: 786px) and (max-width: 864px) {
+        @include responsiveStylesJobDescriptionContainer(2.85rem, 15.5rem, 20.5rem, 1rem, 1rem);
+        @media (min-height: 575px) {
+            @include responsiveStylesJobDescriptionContainer(3.65rem, 18.5rem, 23.5rem, 1rem, 1rem);
+        }
+      }
+    
+      /* Nested media queries for adjusting width based on screen height */
+      @media screen and (min-width: 865px) and (max-width: 1124px) {
+          @include responsiveStylesJobDescriptionContainer(3.2rem, 16.5rem, 22.25rem, 1rem, 1rem);    
+        @media (min-height: 575px) {
+          @include responsiveStylesJobDescriptionContainer(4rem, 18.5rem, 22.5rem, 1rem, 1rem);
+        }
+      }
+    
+      @media screen and (min-width: 1125px) and (max-width: 1364px) {
+          @include responsiveStylesJobDescriptionContainer(4rem, 18.5rem, 19rem, 1rem, 1rem);
+        @media (max-height: 639px) and (min-height: 601px) {
+          @include responsiveStylesJobDescriptionContainer(4rem, 19.2rem, 23rem, 1rem, 1rem);
+        }
+    
+        @media (min-height: 640px) {
+          @include responsiveStylesJobDescriptionContainer(4.7rem, 21rem, 26rem, 1rem, 1rem);
+        }
+      }
+    
+      @media screen and (min-width: 1365px) {
+        @media (max-height: 715px) {
+          @include responsiveStylesJobDescriptionContainer(3.75rem, 19rem, 24rem, 1rem, 1rem);
+        }
+    
+        @media (max-height: 875px) and (min-height: 715px) {
+          @include responsiveStylesJobDescriptionContainer(7rem, 20rem, 25.2rem, 1rem, 1rem);
+        }
+    
+        @media (min-height: 876px) {
+          @include responsiveStylesJobDescriptionContainer(7.75rem, 24rem, 31rem, 1rem, 1rem);
+        }
+      }
+  }
+
+@mixin responsiveStylesCloseButton($bottom, $left, $width) {
+    bottom: $bottom;
+    margin-left: $left;
+    width: $width;
+  }
+  
+  .close-button {
+    position: fixed;
+  
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+      @include responsiveStylesCloseButton(3.75rem, -12rem, 2rem);
+    }
+  
+    @media screen and (min-width: 650px) and (max-width: 785px) {
+      @include responsiveStylesCloseButton(0.75rem, -8.75rem, 1.75rem);
+      @media (min-height: 575px) {
+          @include responsiveStylesCloseButton(0.75rem, -8.75rem, 1.75rem);
+      }
+    }
+  
+    @media screen and (min-width: 786px) and (max-width: 864px) {
+      @include responsiveStylesCloseButton(0.75rem, -7.75rem, 1.75rem);
+      @media (min-height: 575px) {
+          @include responsiveStylesCloseButton(1.25rem, -9rem, 1.75rem);
+      }
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) {
+      @include responsiveStylesCloseButton(3.75rem, -12rem, 2rem);
+    }
+  
+    @media screen and (min-width: 1365px) {
+      @include responsiveStylesCloseButton(3.75rem, -12rem, 2rem);
+    }
+    
+    @media screen and (min-width: 865px) and (max-width: 1124px) {
+        @include responsiveStylesCloseButton(0.55rem, -8rem, 1.75rem);
+      @media (min-height: 575px) {
+        @include responsiveStylesCloseButton(0.85rem, -9rem, 2rem);
+      }
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) {
+        @include responsiveStylesCloseButton(0.85rem, -8.8rem, 2rem);
+      @media (max-height: 639px) and (min-height: 601px) {
+        @include responsiveStylesCloseButton(0.85rem, -9.5rem, 2rem);
+      }
+  
+      @media (min-height: 640px) {
+        @include responsiveStylesCloseButton(1.25rem, -10.5rem, 2.4rem);
+      }
+    }
+  
+    @media screen and (min-width: 1365px) {
+      @media (max-height: 715px) {
+        @include responsiveStylesCloseButton(0.8rem, -9.5rem, 2.2rem);
+      }
+  
+      @media (max-height: 875px) and (min-height: 715px) {
+        @include responsiveStylesCloseButton(3.5rem, -10.5rem, 2.5rem);
+      }
+  
+      @media (min-height: 876px) {
+        @include responsiveStylesCloseButton(3.75rem, -12rem, 2.75rem);
+      }
+    }
+}
+
+@mixin responsiveStylesJobLogo($height, $bottom) {
+    height: $height;
+    bottom: $bottom;
+  }
+  
+  .job-logo {
+    position: fixed;
+    @include responsiveStylesJobLogo(3rem, 3.75rem);
+  
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+      @include responsiveStylesJobLogo(3rem, 3.75rem);
+    }
+  
+    @media screen and (min-width: 650px) and (max-width: 785px) {
+      @include responsiveStylesJobLogo(2rem, 0.5rem);
+      @media (min-height: 575px) {
+          @include responsiveStylesJobLogo(2rem, 0.5rem);
+      }
+    }
+  
+    @media screen and (min-width: 786px) and (max-width: 864px) {
+        @include responsiveStylesJobLogo(2rem, 0.5rem);
+        @media (min-height: 575px) {
+            @include responsiveStylesJobLogo(2.2rem, 1.1rem);
+        }
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) {
+      @include responsiveStylesJobLogo(3rem, 3.75rem);
+    }
+    
+    @media screen and (min-width: 865px) and (max-width: 1124px) {
+        @include responsiveStylesJobLogo(2rem, 0.5rem);
+        @media (min-height: 575px) {
+            @include responsiveStylesJobLogo(2.25rem, 0.85rem);
+        }
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) {
+      @media (max-height: 639px){
+        @include responsiveStylesJobLogo(2.5rem, 0.75rem);
+      }
+  
+      @media (min-height: 640px) {
+        @include responsiveStylesJobLogo(2.8rem, 1.2rem);
+      }
+    }
+  
+    @media screen and (min-width: 1365px) {
+      @media (max-height: 715px) {
+        @include responsiveStylesJobLogo(2.5rem, 0.5rem);
+      }
+  
+      @media (max-height: 875px) and (min-height: 715px) {
+        @include responsiveStylesJobLogo(2.55rem, 3.5rem);
+      }
+  
+      @media (min-height: 876px) {
+        @include responsiveStylesJobLogo(3rem, 3.75rem);
+      }
+    }
+  }
+
+
+// _____done___________
+
+// DONE
+// DONE
+// DONE
+// DONE
+// DONE
+// DONE
+// DONE
+// DONE
+@mixin responsiveStyles($height, $width, $bottom) {
+    height: $height;
+    width: $width;
+    bottom: $bottom;
+}
+
+
+.container-background {
+    position: fixed;
+
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+        @include responsiveStyles(30.5rem, 17rem, 0.25rem);
+    }
+
+    @media screen and (min-width: 650px) and (max-width: 785px) {
+        @include responsiveStyles(30.5rem, 18rem, 0.5rem);
+        @media (min-height: 575px) {
+            @include responsiveStyles(34.5rem, 19rem, 0.5rem);
+        }
+    }
+
+    @media screen and (min-width: 786px) and (max-width: 864px) {
+        @include responsiveStyles(30.5rem, 16rem, 0.25rem);
+        @media (min-height: 575px) {
+            @include responsiveStyles(34.5rem, 19rem, 1rem);
+        }
+    }
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) {
+        @include responsiveStyles(32.5rem, 17rem, 0.25rem);
+        @media (min-height: 575px) {
+            @include responsiveStyles(34.5rem, 19rem, 0.5rem);
+        }
+    }
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) {
+        @include responsiveStyles(31.5rem, 19rem, 0.5rem);
+        @media (max-height: 639px) and (min-height: 601px) {
+            @include responsiveStyles(35.5rem, 20rem, 0.5rem);
+        }
+        @media (min-height: 640px) {
+            @include responsiveStyles(38.5rem, 22rem, 1rem);
+        }
+    }
+
+    @media screen and (min-width: 1365px) {
+        @include responsiveStyles(32.5rem, 19rem, 0.5rem);
+        @media (max-height: 715px) {
+            @include responsiveStyles(36rem, 20rem, 0.5rem);
+        }
+        @media (max-height: 875px) and (min-height: 715px) {
+            @include responsiveStyles(41rem, 22rem, 3rem);
+        }
+        @media (min-height: 876px) {
+            @include responsiveStyles(51rem, 26rem, 3rem);
+        }
+    }
+}

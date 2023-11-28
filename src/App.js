@@ -3,7 +3,8 @@ import Route from "./components/Route";
 import Header from "./components/Header/Header";
 import Footer from './components/Footer/Footer';
 import LogoAnimation from "./pages/Animation/LogoAnimation";
-import SignatureAnimation from "./pages/Animation/SignatureAnimation"
+import SignatureAnimation from "./pages/Animation/SignatureAnimation";
+import AboutMe from './pages/AboutMe/AboutMe';
 import WorkHistory from "./pages/WorkHistory/WorkHistory";
 import Projects from "./pages/Projects/Projects";
 import Blog from "./pages/Blog/Blog";
@@ -12,23 +13,23 @@ import './App.scss';
 
 
 function App() {
-
-    const [showHeader, setShowHeader] = useState(false);
+      
+    const [showHeaderFooter, setShowHeaderFooter] = useState(false);
 
     useEffect(() => {
         setTimeout(() => {
-        setShowHeader(true);
-        }, 5000);
+        setShowHeaderFooter(true);
+        }, 4000);
     }, []);
 
     return (
         <div className="container">
             <LogoAnimation />
-            {showHeader && <Header />}
-            { showHeader &&
+            {showHeaderFooter && <Header />}
+            { showHeaderFooter &&
                 <div>
-                    <Route path="/aboutme">
-                        <WorkHistory />
+                    <Route path="/">
+                        <AboutMe />
                     </Route>
                     <Route path="/workhistory">
                         <WorkHistory />
@@ -45,7 +46,7 @@ function App() {
                 </div>
             }
             <SignatureAnimation /> 
-            <Footer /> 
+            {showHeaderFooter && <Footer />} 
         </div>
     );
 }

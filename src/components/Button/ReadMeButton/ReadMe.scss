@@ -1,0 +1,18 @@
+.arrow-button {
+    cursor: pointer;
+    transition: 0.3s;
+  
+    &.disabled {
+      cursor: not-allowed;
+    }
+  
+    &:hover {
+      transform: scale(1.1);
+      
+    }
+  }
+
+
+.down{
+  z-index: 9;
+}
