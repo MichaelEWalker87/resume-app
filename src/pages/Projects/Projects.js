@@ -8,7 +8,8 @@ import TopButtons from '../../components/Projects/TopButtons/TopButtons';
 import ArrowButtons from '../../components/Projects/ArrowButtons/ArrowButtons';
 import CoorsTextButtons from '../../components/Projects/CoorsTextButtons/CoorsTextButtons';
 import ProjectCardContainer from '../../components/Projects/ProjectCardContainer/ProjectCardContainer';
-import ProjectDetails from '../../components/Projects/ProjectDeatils/ProjectDetails';
+import ProjectDetails from '../../components/Details/Details';
+import LoadIcon from '../../components/LoadIcon/LoadIcon'
 
 function Projects(props) {
   const [activeButton, setActiveButton] = useState('');
@@ -22,9 +23,16 @@ function Projects(props) {
   const [showProjectDetails, setShowProjectDetails] = useState(false);
   const [currentProject, setCurrentProject] = useState({})
   const [filteredCardsLength, setFilteredCardsLength] = useState(0);
+  const [loadingTimer, setLoadingTimer] = useState(false)
    
   useEffect(() => {
       const animationDuration = 4000;
+      const loadingDuration = 2000;
+      
+      setTimeout(() => {
+        setLoadingTimer(true);
+      }, loadingDuration);
+
       setTimeout(() => {
           setShowAnimation(false);
       }, animationDuration);
@@ -83,7 +91,11 @@ function Projects(props) {
  }
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={`loading-container ${loadingTimer ? '' : 'display-none'}`}>
+        <LoadIcon title="Loading"/> 
+      </div>
+    );
   } else {
       return (
               <div>

@@ -2,7 +2,7 @@
 @import '../../../styles/index.scss';
 
 
-@keyframes fadeIn {
+@keyframes fadeIn-work-history {
     0% { opacity: 0; }
     75% { opacity: 0; }
     100% { opacity: 1; }
@@ -23,8 +23,9 @@
 } 
 
 .work-history-card-container{
-    z-index: 20;
-    animation: fadeIn 3s ease-in-out;
+    z-index: 12
+    ;
+    animation: fadeIn-work-history 3s ease-in-out;
 }
 
 .union-card-single-1,
@@ -895,59 +896,60 @@
         font-size: 39px;
         line-height: 37px; 
     }
-    
-      .union-card-single-1{
-        margin-left: -22.35rem;
-      }
-      .union-card-single-2{
-        margin-left: 7.8rem;
-      }
-      .union-card-single-3{
-        margin-left: 7.8rem;
-      }
       
-      .union-card{
-       width: 10rem;
-      }
-      
-      .arrow-button {
-        margin: 0 20px;
-      }
-    
-      .union-card-container{
-        bottom: 10rem;
-      }
-      .union-title{
-        @include wh-cards;
-        font-size: 28px;
-        width: 9rem;
-      }
-      .title-1{
-        margin-left: 1rem;
-      }
-      .title-2{
-        margin-left: 0.5rem;
-      }
-      .title-3{
-        margin-left: 0.5rem;
-      }
-    
-      .read-me-button-1{
-        bottom: 11rem;
-        margin-left: -9.9rem;
-        width: 10rem;
-      } 
-    
-      .read-me-button-2{
-        bottom: 11rem;
-        margin-left: -10rem;
-        width: 10rem;
-      }
-      .read-me-button-3{
-        bottom: 11rem;
-        margin-left: -10rem;
-        width: 10rem;
-      }
+    .union-card{
+      width: 10.1rem;
+    }
+
+    .union-card-single-1{
+      margin-left: -22.35rem;
+    }
+
+    .union-card-single-2{
+      margin-left: 7.8rem;
+    }
+    .union-card-single-3{
+      margin-left: 7.5rem;
+    }
+
+    .arrow-button {
+      margin: 0 20px;
+    }
+  
+    .union-card-container{
+      bottom: 10rem;
+    }
+    .union-title{
+      @include wh-cards;
+      font-size: 28px;
+      width: 9rem;
+    }
+    .title-1{
+      margin-left: 1rem;
+    }
+    .title-2{
+      margin-left: 0.5rem;
+    }
+    .title-3{
+      margin-left: 0.5rem;
+    }
+  
+    .read-me-button-1{
+      bottom: 11rem;
+      margin-left: -9.9rem;
+      width: 10rem;
+    } 
+  
+    .read-me-button-2{
+      bottom: 11rem;
+      margin-left: -10rem;
+      width: 10rem;
+    }
+    .read-me-button-3{
+      bottom: 11rem;
+      margin-left: -10rem;
+      width: 10rem;
+    }
     
   }
 

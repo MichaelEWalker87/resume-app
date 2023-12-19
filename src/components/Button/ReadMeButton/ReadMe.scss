@@ -1,5 +1,5 @@
 .arrow-button {
-    cursor: pointer;
+  cursor: pointer;
     transition: 0.3s;
   
     &.disabled {
@@ -15,4 +15,14 @@
 
 .down{
   z-index: 9;
+}
+
+
+.read-me-button{
+    cursor: pointer;
+    transition: 0.3s;
+  
+    &.disabled {
+      cursor: not-allowed;
+    }
 }

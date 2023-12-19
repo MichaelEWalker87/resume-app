@@ -1,0 +1,370 @@
+@import '../../../styles/index.scss';
+
+
+.submit-me-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    &.disabled {
+      cursor: not-allowed;
+    }
+}
+
+.disabled-class-name-container{
+    cursor: not-allowed;
+}
+
+
+ @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.92);
+              transform: scale(0.92);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.95);
+              transform: scale(0.95);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.92);
+              transform: scale(0.92);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+
+.pulse-submit-contact-click-me{
+	-webkit-animation: heartbeat 8.5s ease-in-out infinite both;
+	        animation: heartbeat 8.5s ease-in-out infinite both;
+}
+
+.submit-internal-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    pointer-events: none;
+    justify-content: space-around;
+
+        @media screen and (min-width: 481px) and (max-width: 649px) {
+                width: 23rem;
+                margin-left: -0.25rem;
+        }  
+
+        /* _______MidWidth______*/
+
+        @media screen and (min-width: 650px) and (max-width: 864px) {
+                width: 23rem;
+                margin-left: -0.25rem;
+        }
+}
+
+.size-appointment-button{
+        @media screen and (min-width: 481px) and (max-width: 649px) {
+        }  
+
+        /* _______MidWidth______*/
+
+        @media screen and (min-width: 650px) and (max-width: 864px) {
+                margin-left: -5.5rem;
+                width: 26rem;
+        }
+
+        /* _______LargeWidth______*/
+
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+                margin-left: -1.5rem;
+                width: 26rem;
+        }
+
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+                margin-left: -1.5rem;
+                width: 26rem;
+        }
+
+        /* _______ExtraLargeWidth______*/
+
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+                margin-left: -3rem;
+                width: 26rem;
+        }
+
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+                margin-left: 1.5rem;
+                width: 26rem;
+        }
+
+        /* _______MaxWidth______*/
+
+        @media screen and (min-width: 1365px) and (max-height:715px){
+                left: -31px;
+                width: 26rem;
+        }
+
+        @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+                margin-left: -4rem;
+                width: 40rem;
+        }
+
+        @media screen and (min-width: 1365px) and (min-height: 876px){
+                margin-left: -3rem;
+                width: 40rem;
+        }
+}
+
+.calendly-style{
+
+
+        @media screen and (min-width: 481px) and (max-width: 649px) {
+        }  
+
+        /* _______MidWidth______*/
+
+        @media screen and (min-width: 650px) and (max-width: 864px) {
+                scale: 0.6;
+                margin-bottom: 0.5rem;
+                margin-right: 0rem; 
+        }
+
+        /* _______LargeWidth______*/
+
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+                scale: 0.6;
+                margin-bottom: 0.5rem;
+                margin-right: 0rem; 
+        }
+
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+                scale: 0.7;
+                margin-bottom: 0.5rem;
+                margin-right: 0rem; 
+        }
+
+        /* _______ExtraLargeWidth______*/
+
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+                scale: 0.7;
+                margin-bottom: 0.5rem;
+                margin-right: 0rem; 
+        }
+
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+                scale: 0.7;
+                margin-bottom: 0.5rem;
+                margin-right: 0rem; 
+        }
+
+        /* _______MaxWidth______*/
+
+        @media screen and (min-width: 1365px) and (max-height:715px){
+                scale: 0.7;
+                margin-bottom: 0.5rem;
+                margin-right: 0rem; 
+        }
+
+        @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+                scale: 0.7;
+                margin-bottom: 0.5rem;
+                margin-right: -15rem;  
+        }
+
+        @media screen and (min-width: 1365px) and (min-height: 876px){
+                scale: 0.7;
+                margin-bottom: 0.5rem;
+                margin-right: -15rem;
+        }
+}
+
+.submit-button-text{
+        @include h2-reg;
+        font-weight: 600;
+
+        @media screen and (min-width: 481px) and (max-width: 649px) {
+        }  
+
+        /* _______MidWidth______*/
+
+        @media screen and (min-width: 650px) and (max-width: 864px) {
+        }
+
+        /* _______LargeWidth______*/
+
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+        }
+
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+        }
+
+        /* _______ExtraLargeWidth______*/
+
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+                @include h2-reg;
+                font-size: 30px;
+                font-weight: 600;
+        }
+}
+
+.active-submit-button{
+    color: $Attention-M;
+}
+
+.hover-submit-button{
+    color: $Secondary-H;
+}
+
+.disabled-submit-button{
+    color: $Gray500;
+}
+
+.submit-contact-me{
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+    }  
+  
+  /* _______MidWidth______*/
+  
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+        scale: 0.5;
+        bottom: -2.5rem;
+        width: 22rem;
+        margin-left: -2.75rem;
+    }
+  
+  /* _______LargeWidth______*/
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+        scale: 0.5;
+        bottom: -2.5rem;
+    }
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+        scale: 0.65;
+        bottom: -1rem;
+    }
+  
+  /* _______ExtraLargeWidth______*/
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+        scale: 0.65;
+        bottom: -1rem;
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+        scale: 0.8;
+    }
+  
+  /* _______MaxWidth______*/
+  
+    @media screen and (min-width: 1365px) and (max-height:715px){
+        scale: 0.65;
+    }
+  
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        scale: 0.8;    
+    }
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        scale: 0.8;
+    }
+}
+
+.book-an-appointment-button{
+        @media screen and (min-width: 481px) and (max-width: 649px) {
+                scale: 0.5;
+        }  
+
+        /* _______MidWidth______*/
+
+        @media screen and (min-width: 650px) and (max-width: 864px) {
+                scale: 0.6;
+        }
+
+        /* _______LargeWidth______*/
+
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+                scale: 0.75;
+        }
+
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+                scale: 0.85;
+        }
+
+        /* _______ExtraLargeWidth______*/
+
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+                scale: 0.75;
+        }
+
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+        }
+
+        /* _______MaxWidth______*/
+
+        @media screen and (min-width: 1365px) and (max-height:715px){
+                scale: 0.8;
+        }
+
+        @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        }
+        @media screen and (min-width: 1365px) and (min-height: 876px){
+        }
+}

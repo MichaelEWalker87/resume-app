@@ -3,17 +3,28 @@ import LoadIcon from '../../components/LoadIcon/LoadIcon';
 import db from '../../firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
 import AnimalButtons from '../../components/Blog/AnimalButtons/AnimalButtons';
+import ZooBackground from '../../components/Blog/ZooBackground/ZooBackground';
+import SelectArticle from '../../components/Blog/SelectArticle/SelectArticle';
 import './Blog.scss';
 
 function Blog(props) {
   const [filteredCards, setFilteredCards] = useState([]);
   const [activeButton, setActiveButton] = useState('');
-  const [projectCards, setProjectCards] = useState([]);
+  const [blogCards, setBlogCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [loadingTimer, setLoadingTimer] = useState(false)
+  const sortedBlogCards = filteredCards.sort((a, b) => b.date - a.date);
+
 
   useEffect(() => {
-    onSnapshot(collection(db, 'Projects'), (snapshot) => {
-      setProjectCards(snapshot.docs.map((doc) => doc.data()));
+    const loadingDuration = 2000;
+    
+    setTimeout(() => {
+      setLoadingTimer(true);
+    }, loadingDuration);
+
+    onSnapshot(collection(db, 'Blog'), (snapshot) => {
+      setBlogCards(snapshot.docs.map((doc) => doc.data()));
       setIsLoading(false);
     });
   }, []);
@@ -21,28 +32,39 @@ function Blog(props) {
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
     if (buttonName === 'all') {
-      setFilteredCards(projectCards);
+      setFilteredCards(blogCards);
     } else {
-      setFilteredCards(projectCards.filter((project) => project.field === buttonName));
+      setFilteredCards(blogCards.filter((project) => project.field === buttonName));
     }
   };
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={`loading-container ${loadingTimer ? '' : 'display-none'}`}>
+        <LoadIcon title="Loading"/> 
+      </div>
+    );
   } else {
     return (
-      <div>
-        <AnimalButtons
-          handleButtonClick={handleButtonClick}
-          activeButton={activeButton} 
-          engineering={'engineering'}
-          design={'design'}
-          product={'product'}
-          all={'all'}
-        />
-      </div>
+        <div className='blog-container'>
+            <SelectArticle 
+                filteredCards={sortedBlogCards}
+                activeButton={activeButton}
+            />
+            <AnimalButtons
+                handleButtonClick={handleButtonClick}
+                activeButton={activeButton} 
+                engineering={'engineering'}
+                design={'design'}
+                product={'product'}
+                all={'all'}
+            />
+            <ZooBackground/>
+            <div className='zoo-banners'/>
+        </div>
     );
   }
 }
 
 export default Blog;
+

@@ -9,51 +9,91 @@ import WorkHistory from "./pages/WorkHistory/WorkHistory";
 import Projects from "./pages/Projects/Projects";
 import Blog from "./pages/Blog/Blog";
 import ContactMe from "./pages/ContactMe/ContactMe";
+import LoadIcon from "./components/LoadIcon/LoadIcon"
 import './App.scss'; 
 
 
 function App() {
-      
     const [showHeaderFooter, setShowHeaderFooter] = useState(false);
+    const [showWarning, setShowWarning] = useState(false);
+    const [showAnimation, setShowAnimation] = useState(false);
 
     useEffect(() => {
+        checkScreenSize();
+        window.addEventListener('resize', checkScreenSize);
+        const animationDuration = 1;
+
         setTimeout(() => {
-        setShowHeaderFooter(true);
+            setShowHeaderFooter(true);
         }, 4000);
+
+        setTimeout(() => {
+            setShowAnimation(true);
+        }, animationDuration);
+
+        return () => {
+            window.removeEventListener('resize', checkScreenSize);
+        };
+
     }, []);
+
+    const checkScreenSize = () => {
+        const screenWidth = window.innerWidth;
+        const screenHeight = window.innerHeight;
+        const displayWarning = (screenWidth < 481 || screenHeight < 440) ||
+          (screenWidth >= 481 && screenWidth <= 649) ||
+          (screenWidth >= 650 && screenHeight <= 465) ||
+          (screenWidth >= 865 && screenHeight <= 475) ||
+          (screenWidth >= 1125 && screenHeight <= 495) ||
+          (screenWidth >= 1365 && screenHeight <= 585);
+        
+        setShowAnimation(false);
+        setShowWarning(displayWarning);
+      };
 
     return (
         <div className="container">
-            <LogoAnimation />
-            {showHeaderFooter && <Header />}
-            { showHeaderFooter &&
-                <div>
-                    <Route path="/">
-                        <AboutMe />
-                    </Route>
-                    <Route path="/workhistory">
-                        <WorkHistory />
-                    </Route>
-                    <Route path="/projects">
-                        <Projects />
-                    </Route>
-                    <Route path="/blog">
-                        <Blog />
-                    </Route>
-                    <Route path="/contactme">
-                        <ContactMe />
-                    </Route>
+            {showWarning ? (
+                <div className='error-mobile-sizing'>
+                    <div className="warning-message">
+                        Heads up! I am still polishing this corner of the portfolio for smaller screens. 
+                        Please readjust your screen size and try again for the full experience.
+                    </div>
+                    <LoadIcon title="Size Error"/> 
                 </div>
-            }
-            <SignatureAnimation /> 
-            {showHeaderFooter && <Footer />} 
+            ) : (
+                <>
+                    <div className={`${showAnimation ? '' : 'animate-done-logo'}`}>
+                        <LogoAnimation />
+                    </div>
+                    {showHeaderFooter && <Header />}
+                    { showHeaderFooter &&
+                        <div>
+                            <Route path="/">
+                                <AboutMe />
+                            </Route>
+                            <Route path="/workhistory">
+                                <WorkHistory />
+                            </Route>
+                            <Route path="/projects">
+                                <Projects />
+                            </Route>
+                            <Route path="/blog">
+                                <Blog />
+                            </Route>
+                            <Route path="/contactme">
+                                <ContactMe />
+                            </Route>
+                        </div>
+                    }
+                    <div className={`${showAnimation ? '' : 'animate-done-logo'}`}>
+                        <SignatureAnimation /> 
+                    </div>
+                    {showHeaderFooter && <Footer />} 
+                </>
+            )}
         </div>
     );
 }
 
 export default App;
-
-
-
-
-

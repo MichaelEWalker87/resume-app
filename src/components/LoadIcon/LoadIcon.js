@@ -28,7 +28,7 @@ const SVGComponent = (props) => (
       fill="url(#a)"
       fontSize={42}
     >
-      {""}
+      {props.title}
     </text>
   </svg>
 );

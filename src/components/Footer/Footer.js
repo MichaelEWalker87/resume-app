@@ -4,19 +4,21 @@ import './Footer.scss';
 import Email from '../../assets/Footer/Email.svg';
 import LinkedIn from '../../assets/Footer/LinkedIn.svg';
 import Signature from '../../assets/Footer/Signature.svg';
+import CalendlyIconBlueButton from '../../assets/Footer/CalendlyIconBlueButton.svg';
+ 
 
 function Footer(props) {
-    
+
     const links = [
         { 
-            label: 'Linked In', 
+            label: 'LinkedIn Link', 
             path: 'https://www.linkedin.com/in/michael-walker-719471141/', 
             image: LinkedIn 
         },
         { 
-            label: 'Email', 
-            path: 'mailto:michael.e.walker@gmail.com', 
-            image: Email
+            label: 'Calendly Link', 
+            path: "https://calendly.com/michael-e-walker-87", 
+            image: CalendlyIconBlueButton
         },
 
     ]

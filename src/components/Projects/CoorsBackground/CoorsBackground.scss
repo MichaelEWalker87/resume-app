@@ -28,6 +28,7 @@
         width: 105.4rem;
         bottom: -8.5rem;
         margin-left: -0.1rem;
+        animation-name: ball-park-animation-mid;
     }
 
 /* _______LargeWidth______*/
@@ -83,6 +84,31 @@
         bottom: -19.55rem;
         margin-left: -0.1rem;
         animation-name: ball-park-animation-max;
+    }
+}
+
+@keyframes ball-park-animation-mid{
+
+    0% {
+        transform: translateX(25rem) translateY(-18.35rem) scale(1.5);
+        z-index: 0;
+    }
+    20% {
+        transform: translateX(25rem) translateY(-18.35rem) scale(1.5);
+        z-index: 0;
+    }
+    55% {
+        transform: translateX(-25rem) translateY(-18.35rem) scale(1.5);
+        z-index: 0;
+    }
+    80% {
+        transform: translateY(0%); opacity:1;
+        z-index: 0;
+    }
+
+    100% {
+        transform: translateY(0%); opacity:0.9;
+        z-index: 0;
     }
 }
 
@@ -214,15 +240,15 @@
 @keyframes ball-park-animation-max-small {
 
     0% {
-        transform: translateX(60rem) translateY(-43.9rem) scale(2);
+        transform: translateX(40rem) translateY(-29.9rem) scale(1.5);
         z-index: 0;
     }
     20% {
-        transform: translateX(60rem) translateY(-43.9rem) scale(2);
+        transform: translateX(40rem) translateY(-29.9rem) scale(1.5);
         z-index: 0;
     }
     55% {
-        transform: translateX(-60rem) translateY(-43.9rem) scale(2);
+        transform: translateX(-40rem) translateY(-29.9rem) scale(1.5);
         z-index: 0;
     }
     80% {

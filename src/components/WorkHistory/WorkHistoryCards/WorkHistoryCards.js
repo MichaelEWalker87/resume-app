@@ -5,6 +5,7 @@ import './WorkHistoryCards.scss'
 import ArrowButton from '../../Button/ArrowButtons/ArrowButtons';
 import WorkHistoryDetails from '../../WorkHistory/WorkHistoryDetails/WorkHistoryDetails'; 
 import WorkHistoryBackImage from '../../WorkHistory/WorkHistoryBackImage/WorkHistoryBackImage';
+import LoadIcon from '../../../components/LoadIcon/LoadIcon';
 import { collection, onSnapshot } from 'firebase/firestore';
 
 function WorkHistoryCards(props) {
@@ -14,8 +15,15 @@ function WorkHistoryCards(props) {
   const [selectedJobIndex, setSelectedJobIndex] = useState(0); 
   const sortedWorkCards = workCards.sort((a, b) => b.order - a.order);
   const [imageIndex, setImageIndex] = useState(0);
+  const [loadingTimer, setLoadingTimer] = useState(false)
 
   useEffect(() => {
+    const loadingDuration = 2000;
+    
+    setTimeout(() => {
+      setLoadingTimer(true);
+    }, loadingDuration);
+
     onSnapshot(collection(db, "WorkHistory"), (snapshot) => {
       setWorkCards(snapshot.docs.map(doc => doc.data()));
       setIsLoading(false);
@@ -55,7 +63,11 @@ function WorkHistoryCards(props) {
   };
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={`loading-container ${loadingTimer ? '' : 'display-none'}`}>
+        <LoadIcon title="Loading"/> 
+      </div>
+    );
   } else {
     return (
       <div className='work-history-card-container'>

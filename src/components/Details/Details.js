@@ -1,8 +1,8 @@
 import React from 'react';
-import './ProjectDetails.scss';
-import CloseButton from '../../Button/CloseButton/CloseButton';
+import './Details.scss';
+import CloseButton from '../Button/CloseButton/CloseButton';
 
-function ProjectDetails(props) {
+function Details(props) {
     const { project, onClose } = props;
     
     if (!onClose) {
@@ -28,11 +28,11 @@ function ProjectDetails(props) {
             seamless
         />
       </div>
-      <di className="close-button-container-project">
+      <div className="close-button-container-project">
         <CloseButton className="project-detail-close" onClick={handleCloseClick} />
-      </di>
+      </div>
     </div>
   );
 }
 
-export default ProjectDetails;
+export default Details;

@@ -3,6 +3,13 @@
 .active-zoo{
 }
 
+.zoo-button{
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+    
+  }
+}
 .zoo-button-img {
     position: relative;
 }
@@ -41,28 +48,256 @@
 
 .product-zoo-button-active{
     transform: translate(-50%, -50%);
-    top: 64%;
     left: 35%;
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+    }  
+  
+  /* _______MidWidth______*/
+  
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+      top: 21%;
+    }
+  
+  /* _______LargeWidth______*/
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+      top: 21%;
+    }
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+      top: 21%;
+    }
+  
+  /* _______ExtraLargeWidth______*/
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+      top: 21%;
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+      top: 21%;
+    }
+  
+  /* _______MaxWidth______*/
+  
+    @media screen and (min-width: 1365px) and (max-height:715px){
+      top: 21%;
+    }
+  
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        top: 21%;
+    }
+  
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        top: 64%;
+    }
 }
 
 .design-zoo-button-active{
     transform: translate(-50%, -50%);
-    top: 62%;
-    left: 61%;  
+    left: 61%;
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+    }  
+  
+  /* _______MidWidth______*/
+  
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+      top: 22%;
+    }
+  
+  /* _______LargeWidth______*/
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+      top: 22%;
+    }
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+      top: 22%;
+    }
+  
+  /* _______ExtraLargeWidth______*/
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+      top: 22%;
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+      top: 22%;
+    }
+  
+  /* _______MaxWidth______*/
+  
+    @media screen and (min-width: 1365px) and (max-height:715px){
+      top: 22%;
+    }
+  
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        top: 20%;
+    }
+  
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        top: 62%;
+    }  
 }
 
 .engineering-zoo-button-active{
     transform: translate(-50%, -50%);
-    top: 62%;
     left: 38%;
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+    }  
+  
+  /* _______MidWidth______*/
+  
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+      top: 20%;
+    }
+  
+  /* _______LargeWidth______*/
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+      top: 20%;
+    }
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+      top: 20%;
+    }
+  
+  /* _______ExtraLargeWidth______*/
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+      top: 20%;
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+      top: 20%;
+    }
+  
+  /* _______MaxWidth______*/
+  
+    @media screen and (min-width: 1365px) and (max-height:715px){
+      top: 20%;
+    }
+  
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        top: 20%;
+    }
+  
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        top: 62%;
+    }
 }
 
 .all-zoo-button-active{
     transform: translate(-50%, -50%);
-    top: 62%;
     left: 60%;
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+    }  
+  
+  /* _______MidWidth______*/
+  
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+      top: 18%;
+    }
+  
+  /* _______LargeWidth______*/
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+      top: 18%;
+    }
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+      top: 18%;
+    }
+  
+  /* _______ExtraLargeWidth______*/
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+      top: 18%;
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+      top: 18%;
+    }
+  
+  /* _______MaxWidth______*/
+  
+    @media screen and (min-width: 1365px) and (max-height:715px){
+      top: 18%;
+    }
+  
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        top: 20%;
+    }
+  
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        top: 62%;
+    }
 }
 
 .you-are-here{
     display: flex;
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+    }  
+  
+  /* _______MidWidth______*/
+  
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+      scale: 0.6;
+      position: fixed;
+      bottom: 3.55rem;
+    }
+  
+  /* _______LargeWidth______*/
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+      scale: 0.6;
+      position: fixed;
+      bottom: 3.55rem;
+    }
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+      scale: 0.6;
+      position: fixed;
+      bottom: 3.55rem;
+    }
+  
+  /* _______ExtraLargeWidth______*/
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+      scale: 0.6;
+      position: fixed;
+      bottom: 3.55rem;
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+      scale: 0.6;
+      position: fixed;
+      bottom: 3.55rem;
+    }
+  
+  /* _______MaxWidth______*/
+  
+    @media screen and (min-width: 1365px) and (max-height:715px){
+      scale: 0.6;
+      position: fixed;
+      bottom: 3.55rem;
+    }
+  
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+      scale: 0.6;
+      position: fixed;
+      bottom: 3.55rem;
+    }
+  
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+
+    }
+}
+
+.engineering-zoo-button-are-here{
+    margin-left: 9.5rem;
+}
+
+.product-zoo-button-are-here{
+    margin-left: 6.5rem;
 }

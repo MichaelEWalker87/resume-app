@@ -9,7 +9,7 @@ import rightNormal from '../../../assets//Buttons/workHistoryButtons/RightNormal
 import rightActive from '../../../assets//Buttons/workHistoryButtons/RightActive.png';
 import rightDisabled from '../../../assets//Buttons/workHistoryButtons/RightDisabled.png';
 
-const ArrowButton = ({ direction, disabled, onClick }) => {
+const ArrowButton = ({ direction, disabled, onClick, showBlogArrows }) => {
   const [isActive, setIsActive] = useState(false);
 
   const normalImage = direction === 'left' ? leftNormal : rightNormal;
@@ -28,7 +28,7 @@ const ArrowButton = ({ direction, disabled, onClick }) => {
   };
 
   return (
-    <div className={`arrow-button ${direction}`}>
+    <div className={`arrow-button ${direction} ${showBlogArrows ? 'blog-arrows' : ''}`}>
       <img
         src={disabled ? disabledImage : isActive ? activeImage : normalImage}
         alt={`${direction} arrow`}

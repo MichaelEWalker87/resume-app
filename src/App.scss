@@ -12,3 +12,26 @@ body {
     overflow: hidden;
 }
 
+.animate-done-logo{
+    animation: none !important;
+    display: none;
+}
+
+.warning-message{
+    @include h3-bold;
+    color: $Attention-M;
+    width: 40%;
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    inline-size: fit-content; 
+    padding-bottom: 0;
+}
+
+.error-mobile-sizing{
+    overflow-y: scroll;
+}
+
+.error-mobile-sizing{
+    text-align: -webkit-center;
+}
