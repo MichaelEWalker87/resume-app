@@ -1,0 +1,316 @@
+@import '../../App.scss';
+    
+    @keyframes signatureAnimationSm {
+        0% {
+            transform: translateX(0%) translateY(0%) scale(3);
+        }
+
+        25% {
+            transform: translateX(0%) translateY(0%) scale(3);
+        }
+
+        50% {
+            transform: translateX(0%) translateY(0%) scale(3);
+        }
+
+        100% {
+            transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+
+    @keyframes signatureAnimationMid {
+        0% {
+            transform: translateX(0%) translateY(0%) scale(3.5);
+        }
+
+        25% {
+            transform: translateX(0%) translateY(0%) scale(3.5);
+        }
+
+        50% {
+            transform: translateX(0%) translateY(0%) scale(3.5);
+        }
+
+        100% {
+            transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+
+    @keyframes signatureAnimationLG {
+        0% {
+            transform: translateX(1000%) translateY(-500%) scale(4.5);
+        }
+
+        25% {
+            transform: translateX(200%) translateY(-500%) scale(4.5);
+        }
+
+        50% {
+            transform: translateX(200%) translateY(-500%) scale(4.5);
+        }
+
+        100% {
+            transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+
+    @keyframes signatureAnimationMaxLS {
+        0% {
+            transform: translateX(1000%) translateY(-500%) scale(3);
+        }
+
+        25% {
+            transform: translateX(200%) translateY(-500%) scale(3);
+        }
+
+        50% {
+            transform: translateX(200%) translateY(-500%) scale(3);
+        }
+
+        100% {
+            transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+    @keyframes signatureAnimationMaxP {
+        0% {
+            transform: translateX(1000%) translateY(-500%) scale(2);
+        }
+
+        25% {
+            transform: translateX(200%) translateY(-500%) scale(2);
+        }
+
+        50% {
+            transform: translateX(200%) translateY(-500%) scale(2);
+        }
+
+        100% {
+            transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+
+
+    .signature-opener {
+        width: 17rem;
+        padding: 0.625rem;
+        padding-bottom: 0.4rem;
+        position: fixed;
+        bottom: 0;
+        &.animate-done {
+            animation: none !important;
+            bottom: 0px;
+        }
+        /* _______EXTRA SMALL______*/
+
+        /* Long landscape */
+        @media screen and (aspect-ratio < 21/9) and (min-width: 481px) and (max-width: 649px) {
+            animation-name: signatureAnimationExtraSmallL;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Landscape  */
+        @media screen and (aspect-ratio >= 21/9) and (aspect-ratio <= 16/9) and (min-width: 481px) and (max-width: 649px) {
+            animation-name: signatureAnimationExtraSmallL;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Portrait */
+        @media screen and (aspect-ratio > 16/9) and (aspect-ratio <= 9/16) and (min-width: 481px) and (max-width: 649px) {
+            animation-name: signatureAnimationExtraSmallP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Narrow portrait */
+        @media screen and (aspect-ratio > 9/16) and (min-width: 481px) and (max-width: 649px) {
+            animation-name: signatureAnimationExtraSmallP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* _______SMALL______*/
+
+        /* Long landscape */
+        @media screen and (aspect-ratio < 21/9) and (min-width: 650px) and (max-width: 785px) {
+            animation-name: signatureAnimationSmallL;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Landscape  */
+        @media screen and (aspect-ratio >= 21/9) and (aspect-ratio <= 16/9) and (min-width: 650px) and (max-width: 785px) {
+            animation-name: signatureAnimationSmallL;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Portrait */
+        @media screen and (aspect-ratio > 16/9) and (aspect-ratio <= 9/16) and (min-width: 650px) and (max-width: 785px) {
+            animation-name: signatureAnimationSmallP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Narrow portrait */
+        @media screen and (aspect-ratio > 9/16) and (min-width: 650px) and (max-width: 785px) {
+            animation-name: signatureAnimationSmallP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* _______MidSize______*/
+
+        /* Long landscape */
+        @media screen and (aspect-ratio < 21/9) and (min-width: 786px) and (max-width: 864px) {
+            animation-name: signatureAnimationMidL;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Landscape  */
+        @media screen and (aspect-ratio >= 21/9) and (aspect-ratio <= 16/9) and (min-width: 786px) and (max-width: 864px) {
+            animation-name: signatureAnimationMidL;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Portrait */
+        @media screen and (aspect-ratio > 16/9) and (aspect-ratio <= 9/16) and (min-width: 786px) and (max-width: 864px) {
+            animation-name: signatureAnimationMidP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Narrow portrait */
+        @media screen and (aspect-ratio > 9/16) and (min-width: 786px) and (max-width: 864px) {
+            animation-name: signatureAnimationMidP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* _______Large______*/
+
+        /* Long landscape */
+        @media screen and (aspect-ratio < 21/9) and (min-width: 865px) and (max-width: 1124px) {
+            animation-name: signatureAnimationLGLS;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Landscape  */
+        @media screen and (aspect-ratio >= 21/9) and (aspect-ratio <= 16/9) and (min-width: 865px) and (max-width: 1124px) {
+            animation-name: signatureAnimationLGLS;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Portrait */
+        @media screen and (aspect-ratio > 16/9) and (aspect-ratio <= 9/16) and (min-width: 865px) and (max-width: 1124px) {
+            animation-name: signatureAnimationLGP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Narrow portrait */
+        @media screen and (aspect-ratio > 9/16) and (min-width: 865px) and (max-width: 1124px) {
+            animation-name: signatureAnimationLGP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* _______ExtraLarge______*/
+
+        /* Long landscape */
+        @media screen and (aspect-ratio < 21/9) and (min-width: 1125px) and (max-width: 1364px) {
+            animation-name: signatureAnimationMaxP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Landscape  */
+        @media screen and (aspect-ratio >= 21/9) and (aspect-ratio <= 16/9) and (min-width: 1125px) and (max-width: 1364px) {
+            animation-name: signatureAnimationMaxP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Portrait */
+        @media screen and (aspect-ratio > 16/9) and (aspect-ratio <= 9/16) and (min-width: 1125px) and (max-width: 1364px) {
+            animation-name: signatureAnimationMaxP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Narrow portrait */
+        @media screen and (aspect-ratio > 9/16) and (min-width: 1125px) and (max-width: 1364px) {
+            animation-name: signatureAnimationMaxP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* _______Largest______*/
+
+        /* Long landscape */
+        @media screen and (aspect-ratio < 21/9) and (max-width: 1364px) {
+            animation-name: signatureAnimationMaxLS;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Landscape  */
+        @media screen and (aspect-ratio >= 21/9) and (aspect-ratio <= 16/9) and (max-width: 1364px) {
+            animation-name: signatureAnimationMaxLS;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Portrait */
+        @media screen and (aspect-ratio > 16/9) and (aspect-ratio <= 9/16) and (max-width: 1364px) {
+            animation-name: signatureAnimationMaxP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+
+        /* Narrow portrait */
+        @media screen and (aspect-ratio > 9/16) and (max-width: 1364px) {
+            animation-name: signatureAnimationMaxP;
+            animation-duration: 4s; 
+            animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        }
+        // @media screen and (min-height:400px) and (max-height: 729px) {
+        //     animation: signatureAnimationMid 4s cubic-bezier(0.002, 0, 1, 1);
+        // }
+        
+        // @media screen and (min-height:720px) and (max-height: 949px) {
+        //     animation: signatureAnimationMid 4s cubic-bezier(0.002, 0, 1, 1);
+        // }
+
+        // @media screen and (min-height:950px) and (max-height: 1080px) {
+        //     animation: signatureAnimationLG 4s cubic-bezier(0.002, 0, 1, 1);
+        // }
+        
+        // @media screen and (min-width: 1364px) and (orientation: landscape){
+        //     animation-name: signatureAnimationMaxLS;
+        //     animation-duration: 4s; 
+        //     animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        // }
+        // @media screen and (min-width: 1364px)  and (orientation: portrait){
+        //     animation-name: signatureAnimationMaxP;
+        //     animation-duration: 4s; 
+        //     animation-timing-function: cubic-bezier(0.002, 0, 1, 1);
+        // }
+    }
+
+    .signature-opener-container {
+        width: 100%;
+        height: 100%;
+        z-index: 15;
+        text-align: center;
+        margin-left: -19.48rem;
+    }
+
+
+
+
