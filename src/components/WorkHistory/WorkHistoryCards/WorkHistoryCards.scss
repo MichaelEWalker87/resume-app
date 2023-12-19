@@ -1,0 +1,955 @@
+@import '../../../App.scss';
+@import '../../../styles/index.scss';
+
+
+@keyframes fadeIn-work-history {
+    0% { opacity: 0; }
+    75% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+.arrow-text-union{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    -webkit-text-stroke: 0.8px #868678;
+    color: #FDF5DE;
+    text-shadow: -1.1px 2.3px 0px #C7C1BE, .5px 1.5px 0.4px #C7C1BE, -1.3px 1.6px 1.5px #868678;
+} 
+
+.work-history-card-container{
+    z-index: 12
+    ;
+    animation: fadeIn-work-history 3s ease-in-out;
+}
+
+.union-card-single-1,
+.union-card-single-2,
+.union-card-single-3 {
+  display: flex;
+  cursor: pointer;
+}
+  
+.union-card{
+   width: 10rem;
+}
+  
+.arrow-button {
+    margin: 0 20px;
+}
+
+.union-card-container{
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+
+.union-title{
+    align-self: center;
+}
+
+.title-1{
+    position: absolute;
+}
+
+.title-2{
+    position: absolute;
+}
+
+.title-3{
+    position: absolute;
+}
+
+.read-me-button-1{
+    position: fixed;
+} 
+
+.read-me-button-2{
+    position: fixed;
+}
+
+.read-me-button-3{
+    position: fixed;
+}
+
+  @media screen and (min-width: 481px) and (max-width: 649px) {
+    .arrow-container {
+        bottom: 3.5rem;
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 39px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -24.5rem;
+      }
+      .union-card-single-2{
+        margin-left: 8.2rem;
+      }
+      .union-card-single-3{
+        margin-left: 8.2rem;
+      }
+      
+      .union-card{
+       width: 11.25rem;
+      }
+      
+      .arrow-button {
+        margin: 0 20px;
+      }
+    
+      .union-card-container{
+        bottom: 10.35rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 28px;
+        width: 9rem;
+      }
+      .title-1{
+        margin-left: 1rem;
+      }
+      .title-2{
+        margin-left: 1.3rem;
+      }
+      .title-3{
+        margin-left: 0.5rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 11rem;
+        margin-left: -9.9rem;
+        width: 10rem;
+        height: 2.6rem;
+      } 
+    
+      .read-me-button-2{
+        bottom: 11rem;
+        margin-left: -10.5rem;
+        width: 10rem;
+        height: 2.6rem;
+      }
+      .read-me-button-3{
+        bottom: 11rem;
+        margin-left: -10.5rem;
+        width: 10rem;
+        height: 2.6rem;
+      }
+  }  
+  
+  /* _______MidWidth______*/
+
+  @media screen and (min-width: 650px) and (max-width: 785px) {
+    .arrow-container {
+        bottom: 2.05rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 37px; 
+        -webkit-text-stroke: 0.5px #868678;
+    }
+    
+      .union-card-single-1{
+        margin-left: -11rem;
+      }
+      .union-card-single-2{
+        margin-left: 3.79rem;;
+      }
+      .union-card-single-3{
+        margin-left: 3.79rem;;
+      }
+      
+      .union-card{
+       width: 5rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: 0.55;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 6.2rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 16px;
+        width: 5rem;
+        line-height: 21px;
+      }
+      .title-1{
+        margin-left: 0rem;
+      }
+      .title-2{
+        margin-left: 0.05rem;
+      }
+      .title-3{
+        margin-left: 0rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 6.5rem;
+        margin-left: -5.158rem;
+        width: 5.28rem;
+        height: 1.3rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 6.5rem;
+        margin-left: -5.158rem;
+        width: 5.28rem;
+        height: 1.3rem;
+      }
+      .read-me-button-3{
+        bottom: 6.5rem;
+        margin-left: -5.158rem;
+        width: 5.28rem;
+        height: 1.3rem;
+      }
+  }
+  
+  /* _______MidWidth______*/
+
+  @media screen and (min-width: 786px) and (max-width: 864px) {
+    .arrow-container {
+        bottom: 2.2rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 37px; 
+        -webkit-text-stroke: 0.65px #868678;
+    }
+    
+      .union-card-single-1{
+        margin-left: -12.57rem;
+      }
+      .union-card-single-2{
+        margin-left: 4.25rem;;
+      }
+      .union-card-single-3{
+        margin-left: 4.12rem;;
+      }
+      
+      .union-card{
+       width: 5.78rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: .6;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 6.5rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 18px;
+        width: 5.5rem;
+        line-height: 26px;
+      }
+      .title-1{
+        margin-left: 0.1rem;
+      }
+      .title-2{
+        margin-left: 0.15rem;
+      }
+      .title-3{
+        margin-left: 0.2rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 7.2rem;
+        margin-left: -5.88rem;
+        width: 6rem;
+        height: 1.5rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 7.2rem;
+        margin-left: -5.927rem;
+        width: 6rem;
+        height: 1.5rem;
+      }
+      .read-me-button-3{
+        bottom: 7.2rem;
+        margin-left: -5.845rem;
+        width: 6rem;
+        height: 1.5rem;
+      }
+  }
+  
+  /* _______LargeWidth______*/
+
+  @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+    .arrow-container {
+        bottom: 2.2rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -12.57rem;
+      }
+      .union-card-single-2{
+        margin-left: 4.25rem;;
+      }
+      .union-card-single-3{
+        margin-left: 4.12rem;;
+      }
+      
+      .union-card{
+       width: 5.78rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: .6;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 6.5rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 18px;
+        width: 5.5rem;
+        line-height: 26px;
+      }
+      .title-1{
+        margin-left: 0.1rem;
+      }
+      .title-2{
+        margin-left: 0.15rem;
+      }
+      .title-3{
+        margin-left: 0.2rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 7.2rem;
+        margin-left: -5.88rem;
+        width: 6rem;
+        height: 1.5rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 7.2rem;
+        margin-left: -5.927rem;
+        width: 6rem;
+        height: 1.5rem;
+      }
+      .read-me-button-3{
+        bottom: 7.2rem;
+        margin-left: -5.845rem;
+        width: 6rem;
+        height: 1.5rem;
+      }
+  }
+  
+  @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+    .arrow-container {
+        bottom: 2.3rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -18.1rem;
+      }
+      .union-card-single-2{
+        margin-left: 6.1rem;;
+      }
+      .union-card-single-3{
+        margin-left: 6.1rem;;
+      }
+      
+      .union-card{
+       width: 8.25rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: .8;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 8rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 25px;
+        width: 8rem;
+      }
+      .title-1{
+        margin-left: 0rem;
+      }
+      .title-2{
+        margin-left: 0.3rem;
+      }
+      .title-3{
+        margin-left: 0.3rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 8.8rem;
+        margin-left: -8.35rem;
+        width: 8.6rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 8.8rem;
+        margin-left: -8.35rem;
+        width: 8.6rem;
+      }
+      .read-me-button-3{
+        bottom: 8.8rem;
+        margin-left: -8.4rem;
+        width: 8.6rem;
+      }
+  }
+  
+  @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+    .arrow-container {
+        bottom: 2.5rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -14.1rem;
+      }
+      .union-card-single-2{
+        margin-left: 4.7rem;;
+      }
+      .union-card-single-3{
+        margin-left: 4.7rem;;
+      }
+      
+      .union-card{
+       width: 6.5rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: .65;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 7.2rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 20px;
+        width: 6rem;
+        line-height: 26px;
+      }
+      .title-1{
+        margin-left: 0.5rem;
+      }
+      .title-2{
+        margin-left: 0.3rem;
+      }
+      .title-3{
+        margin-left: 0.3rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 8.2rem;
+        margin-left: -6.55rem;
+        width: 6.6rem;
+        height: 1.5rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 8.2rem;
+        margin-left: -6.6rem;
+        width: 6.6rem;
+        height: 1.5rem;
+      }
+      .read-me-button-3{
+        bottom: 8.2rem;
+        margin-left: -6.5rem;
+        width: 6.6rem;
+        height: 1.5rem;
+      }
+  }
+  
+  @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+    .arrow-container {
+        bottom: 2.3rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -18.1rem;
+      }
+      .union-card-single-2{
+        margin-left: 6.1rem;;
+      }
+      .union-card-single-3{
+        margin-left: 6.1rem;;
+      }
+      
+      .union-card{
+       width: 8.25rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: .8;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 8rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 25px;
+        width: 8rem;
+      }
+      .title-1{
+        margin-left: 0rem;
+      }
+      .title-2{
+        margin-left: 0.3rem;
+      }
+      .title-3{
+        margin-left: 0.3rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 8.8rem;
+        margin-left: -8.3rem;
+        width: 8.6rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 8.8rem;
+        margin-left: -8.35rem;
+        width: 8.6rem;
+      }
+      .read-me-button-3{
+        bottom: 8.8rem;
+        margin-left: -8.4rem;
+        width: 8.6rem;
+      }
+  }
+ 
+  /* _______ExtraLargeWidth______*/
+
+  @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+    .arrow-container {
+        bottom: 2.5rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -14.1rem;
+      }
+      .union-card-single-2{
+        margin-left: 4.7rem;;
+      }
+      .union-card-single-3{
+        margin-left: 4.7rem;;
+      }
+      
+      .union-card{
+       width: 6.5rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: .65;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 7.2rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 20px;
+        width: 6rem;
+        line-height: 26px;
+      }
+      .title-1{
+        margin-left: 0.5rem;
+      }
+      .title-2{
+        margin-left: 0.3rem;
+      }
+      .title-3{
+        margin-left: 0.3rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 8.2rem;
+        margin-left: -6.5rem;
+        width: 6.6rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 8.2rem;
+        margin-left: -6.6rem;
+        width: 6.6rem;
+      }
+      .read-me-button-3{
+        bottom: 8.2rem;
+        margin-left: -6.5rem;
+        width: 6.6rem;
+      }
+  }
+  
+  @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+    .arrow-container {
+        bottom: 2.3rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -18.1rem;
+      }
+      .union-card-single-2{
+        margin-left: 6.1rem;;
+      }
+      .union-card-single-3{
+        margin-left: 6.1rem;;
+      }
+      
+      .union-card{
+       width: 8.25rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: .8;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 8rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 25px;
+        width: 8rem;
+      }
+      .title-1{
+        margin-left: 0rem;
+      }
+      .title-2{
+        margin-left: 0.3rem;
+      }
+      .title-3{
+        margin-left: 0.3rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 8.8rem;
+        margin-left: -8.3rem;
+        width: 8.6rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 8.8rem;
+        margin-left: -8.35rem;
+        width: 8.6rem;
+      }
+      .read-me-button-3{
+        bottom: 8.8rem;
+        margin-left: -8.4rem;
+        width: 8.6rem;
+      }
+  }
+  
+  /* _______MaxWidth______*/
+
+  @media screen and (min-width: 1365px) and (max-height:715px){
+    .arrow-container {
+        bottom: 2.3rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -18.1rem;
+      }
+      .union-card-single-2{
+        margin-left: 6.1rem;;
+      }
+      .union-card-single-3{
+        margin-left: 6.1rem;;
+      }
+      
+      .union-card{
+       width: 8.25rem;
+      }
+
+      .arrow-button {
+        margin: 0 0px;
+        scale: .8;
+        &:hover {
+            transform: scale(1.1);
+          }
+      }
+
+      .union-card-container{
+        bottom: 8rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 25px;
+        width: 8rem;
+      }
+      .title-1{
+        margin-left: 0rem;
+      }
+      .title-2{
+        margin-left: 0.3rem;
+      }
+      .title-3{
+        margin-left: 0.3rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 8.8rem;
+        margin-left: -8.4em;
+        width: 8.6rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 8.8rem;
+        margin-left: -8.4em;
+        width: 8.6rem;
+      }
+      .read-me-button-3{
+        bottom: 8.8rem;
+        margin-left: -8.4em;
+        width: 8.6rem;
+      }
+  }
+
+  @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+    .arrow-container {
+        bottom: 2.6rem; 
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 39px;
+        line-height: 37px; 
+    }
+    
+      .union-card-single-1{
+        margin-left: -20.25rem;
+      }
+      .union-card-single-2{
+        margin-left: 6.8rem;
+      }
+      .union-card-single-3{
+        margin-left: 6.8rem;
+      }
+      
+      .union-card{
+       width: 9.25rem;
+      }
+      
+      .arrow-button {
+        margin: 0 20px;
+      }
+    
+      .union-card-container{
+        bottom: 9rem;
+      }
+      .union-title{
+        @include wh-cards;
+        font-size: 28px;
+        width: 9rem;
+      }
+      .title-1{
+        margin-left: 0rem;
+      }
+      .title-2{
+        margin-left: 0.3rem;
+      }
+      .title-3{
+        margin-left: 0.3rem;
+      }
+    
+      .read-me-button-1{
+        bottom: 9.5rem;
+        margin-left: -9.45rem;
+        width: 9.5rem;
+      }
+    
+      .read-me-button-2{
+        bottom: 9.5rem;
+        margin-left: -9.35rem;
+        width: 9.5rem;
+      }
+      .read-me-button-3{
+        bottom: 9.5rem;
+        margin-left: -9.3rem;
+        width: 9.5rem;
+      }
+  }
+  
+  @media screen and (min-width: 1365px) and (min-height: 876px){
+
+    .arrow-container {
+        bottom: 3.5rem;
+        left: 0;
+        right: 0;
+    }
+    .arrow-text{
+        margin-inline: 2rem;
+        font-weight: 700;
+        font-size: 39px;
+        line-height: 37px; 
+    }
+      
+    .union-card{
+      width: 10.1rem;
+    }
+
+    .union-card-single-1{
+      margin-left: -22.35rem;
+    }
+
+    .union-card-single-2{
+      margin-left: 7.8rem;
+    }
+    .union-card-single-3{
+      margin-left: 7.5rem;
+    }
+
+    .arrow-button {
+      margin: 0 20px;
+    }
+  
+    .union-card-container{
+      bottom: 10rem;
+    }
+    .union-title{
+      @include wh-cards;
+      font-size: 28px;
+      width: 9rem;
+    }
+    .title-1{
+      margin-left: 1rem;
+    }
+    .title-2{
+      margin-left: 0.5rem;
+    }
+    .title-3{
+      margin-left: 0.5rem;
+    }
+  
+    .read-me-button-1{
+      bottom: 11rem;
+      margin-left: -9.9rem;
+      width: 10rem;
+    } 
+  
+    .read-me-button-2{
+      bottom: 11rem;
+      margin-left: -10rem;
+      width: 10rem;
+    }
+    .read-me-button-3{
+      bottom: 11rem;
+      margin-left: -10rem;
+      width: 10rem;
+    }
+    
+  }
+

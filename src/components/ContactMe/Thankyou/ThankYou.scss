@@ -1,0 +1,139 @@
+@import '../../../styles/index.scss';
+
+$color-sequence: $Splash-H $Slash-M $Splash-S $Pop-H $Pop-M $Pop-S $Attention-H $Attention-M $Attention-S;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-email-sent{
+ animation-delay: 7.1s;
+ animation: fadeIn 5s;
+}
+
+@keyframes hueRotateAnimation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.thank-you-text {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  span {
+    color: $thank-you-text-color;
+    transition: 0.25s;
+    @include h1-bold;
+  }
+}
+
+.text-delay {
+  span {
+    color: $Attention-H;
+    animation: hueRotateAnimation 5s infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  @for $i from 0 through 8 {
+    span:nth-child(#{$i + 1}) {
+      color: nth($color-sequence, $i + 1);
+      animation-delay: 10s + #{($i * 0.85)}s;
+    }
+  }
+}
+
+@keyframes hueRotateAnimation {
+  0% {
+    filter: hue-rotate(100deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.display-none{
+  display: none;
+}
+
+.fade-in-reset-email-submit{
+  animation: fadeIn 5s;
+}
+
+.thank-you-text {
+
+  @media screen and (min-width: 481px) and (max-width: 649px) {
+  }  
+
+/* _______MidWidth______*/
+
+  @media screen and (min-width: 650px) and (max-width: 864px) {
+    scale: 0.7;
+    top: 2.2rem;
+    left: 1rem;
+    width: 25.25rem;
+  }
+
+/* _______LargeWidth______*/
+
+  @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+    scale: .8;
+    top: 3rem;
+    left: 5rem;
+    width: 25.25rem;
+  }
+
+  @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+    scale: .8;
+    top: 3rem;
+    left: 5rem;
+    width: 25.25rem;
+  }
+
+/* _______ExtraLargeWidth______*/
+
+  @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+    scale: .8;
+    top: 3rem;
+    left: 4rem;
+    width: 25.25rem;
+  }
+
+  @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+    scale: 1;
+    top: 4rem;
+    left: 9.75rem;
+    width: 25.25rem;
+  }
+
+/* _______MaxWidth______*/
+
+  @media screen and (min-width: 1365px) and (max-height:715px){
+    scale: 1;
+    top: 4rem;
+    left: 5.75rem;
+    width: 25.25rem;
+  }
+
+  @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+    scale: 1.2;
+    top: 4rem;
+    left: 11.5rem;
+    width: 25.25rem;
+  }
+
+  @media screen and (min-width: 1365px) and (min-height: 876px){
+    scale: 1.5;
+    bottom: 9rem;
+    left: 15rem;
+    width: 25.25rem;
+  }
+}

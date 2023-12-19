@@ -1,0 +1,30 @@
+<svg width="466" height="87" viewBox="0 0 466 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dii_78_23096)">
+<path d="M6 39.5558C6 21.0235 21.0235 6 39.5558 6H429.943C449.857 6 466 22.1432 466 42.0569V42.0569C466 60.5893 450.977 75.6127 432.444 75.6127H42.0569C22.1432 75.6127 6 59.4695 6 39.5558V39.5558Z" fill="#ECECEC"/>
+<path d="M39.5558 7H429.943C449.305 7 465 22.6955 465 42.0569C465 60.037 450.424 74.6127 432.444 74.6127H42.0569C22.6955 74.6127 7 58.9172 7 39.5558C7 21.5757 21.5757 7 39.5558 7Z" stroke="#949597" stroke-width="2"/>
+</g>
+<defs>
+<filter id="filter0_dii_78_23096" x="0.682081" y="0.682081" width="475.954" height="85.5666" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="2.65896" dy="2.65896"/>
+<feGaussianBlur stdDeviation="3.98844"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_78_23096"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_78_23096" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-3.98844" dy="-3.98844"/>
+<feGaussianBlur stdDeviation="5.98266"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_78_23096"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="6.6474" dy="6.6474"/>
+<feGaussianBlur stdDeviation="5.31792"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow_78_23096" result="effect3_innerShadow_78_23096"/>
+</filter>
+</defs>
+</svg>

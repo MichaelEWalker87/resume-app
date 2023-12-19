@@ -1,0 +1,305 @@
+
+
+.base-envelope{
+    position: absolute;
+    top: -25rem;
+    left: 8rem;
+    width: 25.25rem;
+    z-index: 2;
+}
+
+.paper-open{
+    position: absolute;
+    top: -24.75rem;
+    left: 9.2rem;
+    width: 23rem;
+}
+
+.point-up-envelope{
+    position: absolute;
+    top: -35.15rem;
+    left: 7.8rem;
+    width: 25.5rem;
+}
+
+.shadow-envelope{
+    position: absolute;
+    top: -25rem;
+    left: 8rem;
+    width: 25.25rem;
+}
+
+.point-down-envelope{
+    position: absolute;
+    top: -25rem;
+    left: 8rem;
+    width: 25.25rem;
+    z-index: 1;
+}
+
+@keyframes paperOpenAnimation {
+    0% {
+    top: -30rem;
+    display: block;
+    }
+    100% {
+    top: -24.75rem;
+    display: none;
+    }
+}
+
+@keyframes pointUpAnimation {
+    0% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+    }
+    100% {
+        transform: scaleY(0);
+        transform-origin: bottom;
+    }
+}
+
+@keyframes pointDownAnimation {
+    0% {
+        transform: scaleY(0.01);
+        transform-origin: top;
+    }
+    100% {
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+}
+
+@keyframes baseEnvelopeAnimation {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0.05);
+    }
+}
+
+@keyframes baseEnvelopeAnimation {
+    0% {
+        transform: scaleY(1);
+    }
+    90% {
+        opacity: 100%;
+    }
+    100% {
+        transform: scaleY(0.1) translateY(-6rem);
+        opacity: 0%;
+    }
+}
+
+@keyframes basePlaneAnimation {
+    0% {
+        transform: scaleY(0.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.paper-open {
+    animation: paperOpenAnimation 0.7s ease-in-out;
+}
+
+.point-up-envelope{
+    animation: pointUpAnimation 0.5s ease-in-out;
+    animation-delay: 0.6s;
+}
+
+.point-down-envelope{
+    animation: pointDownAnimation 0.5s ease-in-out;
+}
+
+.point-down-delay{
+    display: none;
+}
+
+.full-letter{
+    animation: baseEnvelopeAnimation 1.8s ease-in-out;
+}
+
+.full-plane{
+    animation: basePlaneAnimation 1.5s ease-in-out;
+    animation-delay: 0.2s;
+}
+
+.base-plane{
+    position: absolute;
+    transform: scaleY(0.1);
+    top: -25rem;
+    left: 8rem;
+    width: 25.25rem;
+    z-index: 2;
+    opacity: 0;
+}
+
+.base-plane-two{
+    position: absolute;
+    top: -25rem;
+    left: 8rem;
+    width: 25.25rem;
+    z-index: 2;
+}
+
+@keyframes flip-circle {
+    0% {
+        transform: rotate(0deg) translateX(0) translateY(0);
+        scale: 1;
+        opacity: 1;
+    }
+    10% {
+        transform: rotate(0deg) translateX(0) translateY(0);
+        scale: 0.5;
+        opacity: 1;
+    }
+    25% {
+        transform: rotate(90deg) translateX(-3rem) translateY(0rem);
+        scale: 0.5;
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(-180deg) translateX(30rem) translateY(45rem);
+        scale: 0.5;
+        opacity: 1;
+    }
+    70% {
+        transform: rotate(-270deg) translateX(7rem) translateY(24rem);
+        scale: 0.5;
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-360deg) translateX(0) translateY(0);
+        scale: 0.5;
+        opacity: 1;
+    }
+}
+.base-plane-flip{
+    animation: flip-circle 3.5s linear;
+    animation-delay: 0.5s;
+    position: absolute;
+    top: -25rem;
+    left: 8rem;
+    width: 25.25rem;
+    z-index: 2;
+    opacity: 0;
+}
+
+
+@keyframes plane-hover {
+    0% {
+        transform: translateY(1rem);
+        opacity: 1;
+    }
+    
+    10% {
+        transform: rotate(5deg) translateY(-3rem);
+        opacity: 1;
+    }
+    25% {
+        transform: rotate(5deg) translateY(-2rem);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(-1deg) translateY(-1rem);
+        opacity: 1;
+    }
+    70% {
+        transform: rotate(-3deg) translateY(1rem);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1rem);
+        opacity: 1;
+    }
+}
+
+.plane-hover-style{
+    animation: plane-hover 3.5s linear infinite; 
+    animation-direction: alternate-reverse;
+    animation-delay: 0.1s;
+    position: absolute;
+    scale: 0.5;
+    top: -25rem;
+    left: 8rem;
+    width: 25.25rem;
+    z-index: 2;
+    opacity: 0;
+}
+
+
+.letter-container{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+    }  
+  
+  /* _______MidWidth______*/
+  
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+        scale: 0.35;
+        margin-left: -25rem;
+        top: 22.5rem;
+        width: 82rem;
+    }
+  
+  /* _______LargeWidth______*/
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+        scale: 0.4;
+        margin-left: -21rem;
+        top: 24.5rem;
+        width: 82rem;
+    }
+  
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+        scale: 0.45;
+        margin-left: -21rem;
+        top: 30.5rem;
+        width: 82rem;
+    }
+  
+  /* _______ExtraLargeWidth______*/
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+        scale: 0.45;
+        margin-left: -21rem;
+        top: 27.5rem;
+        width: 82rem;
+    }
+  
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+        scale: 0.7;
+        margin-left: -14rem;
+        top: 40rem;
+        width: 99rem;
+    }
+  
+  /* _______MaxWidth______*/
+  
+    @media screen and (min-width: 1365px) and (max-height:715px){
+        scale: 0.5;
+        margin-left: -23rem;
+        top: 34rem;
+        width: 99rem;
+    }
+  
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        scale: 0.8;
+        margin-left: -10rem;
+        top: 45rem;
+        width: 99rem;
+    }
+  
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+
+    }
+
+}

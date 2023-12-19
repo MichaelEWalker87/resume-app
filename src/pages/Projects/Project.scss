@@ -1,0 +1,440 @@
+@import '../../styles/index.scss';
+
+@keyframes ball-park-fade {
+
+    0% {
+         opacity:0;
+    }
+
+    20% {
+         opacity:0;
+    }
+
+    80% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+
+
+.youtube {
+    &.animate-done {
+        animation: none !important;
+    }
+    animation-name: ball-park-fade;
+    animation-duration: 3s; 
+    animation-timing-function: ease;
+}
+
+.arrow-container-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    animation-name: ball-park-fade;
+    animation-duration: 3s; 
+    animation-timing-function: ease;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+
+    }  
+
+
+/* _______MidWidth______*/
+
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+        scale: 0.7;
+        bottom: 1.19rem;
+    }
+
+/* _______LargeWidth______*/
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+        scale: 0.75;
+        bottom: 1.25rem;
+    }
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+        scale: 0.8;
+        bottom: 1.25rem;
+    }
+
+/* _______ExtraLargeWidth______*/
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+        scale: .8;
+        bottom: 1.35rem; 
+    }
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+        scale: .8;
+        bottom: 0.85rem; 
+    }
+
+/* _______MaxWidth______*/
+
+    @media screen and (min-width: 1365px) and (max-height:715px){
+        scale: .75;
+        bottom: 0.85rem; 
+    }
+
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        scale: .8;
+        bottom: 0.8rem; 
+    }
+
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        scale: .8;
+        bottom: 1rem; 
+    }
+}
+
+.coors-text-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+    width: 100%
+}
+
+.top-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    animation-name: ball-park-fade;
+    animation-duration: 3s; 
+    animation-timing-function: ease; 
+    z-index: 7;
+}
+
+.video-button-container{
+    position: fixed;
+
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+
+    }  
+
+
+/* _______MidWidth______*/
+
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+        scale: 0.45;
+        margin-left: 16rem;
+        bottom: 14.35rem;
+    }
+
+/* _______LargeWidth______*/
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+        scale: 0.55;
+        margin-left: 20rem;
+        bottom: 17.9rem;
+    }
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+        scale: 0.65;
+        margin-left: 20rem;
+        bottom: 18.65rem;
+    }
+
+/* _______ExtraLargeWidth______*/
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+        scale: 0.65;
+        margin-left: 20rem;
+        bottom: 20.2rem;
+    }
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+        scale: 0.75;
+        margin-left: 23rem;
+        bottom: 23.5rem;
+    }
+
+/* _______MaxWidth______*/
+
+    @media screen and (min-width: 1365px) and (max-height:715px){
+        scale: 0.75;
+        margin-left: 23rem;
+        bottom: 22.85rem;
+    }
+
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        scale: 0.75;
+        margin-left: 25rem;
+        bottom: 25.75rem;
+    }
+
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        scale: 0.8;
+        margin-left: 25rem;
+        bottom: 27.75rem;
+    }
+}
+
+.read-me-button-container{
+    position: fixed;
+    z-index: 9;
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+
+    }  
+
+
+/* _______MidWidth______*/
+
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+        scale: 0.4;
+        margin-left: -13.3rem;
+        bottom: 13.75rem;
+    }
+
+/* _______LargeWidth______*/
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+        scale: 0.5;
+        margin-left: -17.4rem;
+        bottom: 17.15rem;
+    }
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+        scale: 0.5;
+        margin-left: -18rem;
+        bottom: 17.85rem;
+    }
+
+/* _______ExtraLargeWidth______*/
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+        scale: 0.55;
+        margin-left: -19.25rem;
+        bottom: 19.5rem;
+    }
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+        scale: 0.65;
+        margin-left: -22.5rem;
+        bottom: 22.5rem;
+    }
+
+/* _______MaxWidth______*/
+
+    @media screen and (min-width: 1365px) and (max-height:715px){
+        scale: 0.65;
+        margin-left: -22rem;
+        bottom: 22.2rem;
+    }
+
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        scale: 0.7;
+        margin-left: -26rem;
+        bottom: 24.9rem;
+    }
+
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        scale: 0.7;
+        margin-left: -26rem;
+        bottom: 26.7rem;
+    }
+}
+
+.read-me-button-projects{
+    z-index: 9;
+    position: fixed;
+}
+
+.project-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+    width: 100%
+}
+
+.project-card-container{
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+}
+
+.project-title{
+    text-align: center;
+    position: fixed;
+    color: $Gray200;
+    animation-name: ball-park-fade;
+    animation-duration: 3s; 
+    animation-timing-function: ease;
+   
+
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+
+    }  
+
+
+/* _______MidWidth______*/
+
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+        @include h4-reg;
+        width: 5.5rem;
+        bottom: 14.4rem;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+/* _______LargeWidth______*/
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+        @include h4-reg;
+        width: 7rem;
+        bottom: 17.9rem;
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+        @include h4-reg;
+        width: 7rem;
+        bottom: 17.9rem;
+        line-height: 25px;
+    }
+
+/* _______ExtraLargeWidth______*/
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+        @include h4-reg;
+        width: 7.5rem;
+        bottom: 19.9rem;
+        line-height: 26px;
+    }
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+        @include h3-reg;
+        width: 7.5rem;
+        bottom: 22.9rem;
+        line-height: 30px;
+        font-size: 21px;
+    }
+
+/* _______MaxWidth______*/
+
+    @media screen and (min-width: 1365px) and (max-height:715px){
+        @include h4-reg;
+        width: 7.5rem;
+        bottom: 22.9rem;
+    }
+
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        @include h3-reg;
+        width: 9.5rem;
+        bottom: 25.5rem;
+        line-height: 32px;
+        font-size: 22px;
+    }
+
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        @include h3-reg;
+        width: 9.5rem;
+        bottom: 26.5rem;
+    }
+}
+
+.arrow-text-coors{
+    color: $Gray200;
+    animation-name: ball-park-fade;
+    animation-duration: 3s; 
+    animation-timing-function: ease;
+}
+
+.coors-text-button{
+    animation-name: ball-park-fade;
+    animation-duration: 3s; 
+    animation-timing-function: ease;
+}
+
+.jumbotron{
+    position: fixed;
+    z-index: 5;
+    transform: translateX(-50%);
+
+
+    @media screen and (min-width: 481px) and (max-width: 649px) {
+
+    }  
+
+/* _______MidWidth______*/
+
+    @media screen and (min-width: 650px) and (max-width: 864px) {
+        left: 49.85%;
+        bottom: 4.6rem;
+        width: 21.5rem;
+        height: 10.5rem;
+    }
+
+/* _______LargeWidth______*/
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
+        left: 49.95%;
+        bottom: 4.8rem;
+        width: 27.6rem;
+        height: 13.7rem;
+    }
+
+    @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+        left: 49.9%;
+        bottom: 5.4rem;
+        width: 28.1rem;
+        height: 13.75rem;
+    }
+
+/* _______ExtraLargeWidth______*/
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
+        left: 49.95%;
+        bottom: 5.5rem;
+        width: 30.6rem;
+        height: 15rem;
+    }
+
+    @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+        left: 49.95%;
+        bottom: 5.8rem;
+        width: 36.1rem;
+        height: 17.7rem;
+    }
+
+/* _______MaxWidth______*/
+
+    @media screen and (min-width: 1365px) and (max-height:715px){
+        left: 49.9%;
+        bottom: 5.8rem;
+        width: 35.3rem;
+        height: 17.2rem;
+    }
+
+    @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+        left: 49.95%;
+        bottom: 5.95rem;
+        width: 39.9rem;
+        height: 19.75rem;
+    }
+
+    @media screen and (min-width: 1365px) and (min-height: 876px){
+        left: 49.95%;
+        bottom: 6.3rem;
+        width:42.5rem; 
+        height:21.25rem; 
+    }
+}
+
+.loading-container{
+    text-align: center; 
+}

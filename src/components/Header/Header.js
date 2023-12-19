@@ -5,7 +5,7 @@ import LogoLarge from '../../assets/Logo/LogoLarge.svg';
 
 function Header() {
     const links = [
-        { label: 'About Me', path: '/aboutme' },
+        { label: 'About Me', path: '/' },
         { label: 'Work History', path: '/workhistory' },
         { label: 'Projects', path: '/projects' },
         { label: 'Blog', path: '/blog' },

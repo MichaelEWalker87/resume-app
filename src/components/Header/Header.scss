@@ -9,7 +9,7 @@ html {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   align-self: center;
-  z-index: 1;
+  z-index: 12;
 }
 
 .logo-nav {
@@ -40,7 +40,7 @@ html {
         padding: 0.625rem;
     }
 
-    @media screen and (min-width: 1364px) {
+    @media screen and (min-width: 1365px) {
         width: 10.5rem;
         padding: 0.625rem;
     }
@@ -114,10 +114,6 @@ html {
 
     @media screen and (min-width: 865px) and (max-width: 1124px) {
         @include h4-reg;
-    }
-
-    @media screen and (min-width: 1125px) and (max-width: 1124px) {
-        @include h3-reg;
     }
 
     @media screen and (min-width: 1125px) and (max-width: 1364px) {

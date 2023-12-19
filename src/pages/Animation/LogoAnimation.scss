@@ -36,17 +36,71 @@
         }
     }
 
-    @keyframes logoAnimationLG {
+    @keyframes logoAnimationMidShort {
         0% {
-        transform: translateX(-1000%) translateY(220%) scale(4.5);
+        transform: translateX(-1000%) translateY(120%) scale(3.5);
         }
 
         25% {
-        transform: translateX(250%) translateY(220%) scale(4.5);
+        transform: translateX(250%) translateY(120%) scale(3.5);
         }
 
         50% {
-        transform: translateX(250%) translateY(220%) scale(4.5);
+        transform: translateX(250%) translateY(120%) scale(3.5);
+        }
+
+        100% {
+        transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+    
+    @keyframes logoAnimationMidTall {
+        0% {
+        transform: translateX(-1000%) translateY(160%) scale(4);
+        }
+
+        25% {
+        transform: translateX(250%) translateY(160%) scale(4);
+        }
+
+        50% {
+        transform: translateX(250%) translateY(160%) scale(4);
+        }
+
+        100% {
+        transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+    
+    @keyframes logoAnimationLGShort {
+        0% {
+        transform: translateX(-1000%) translateY(140%) scale(3.2);
+        }
+
+        25% {
+        transform: translateX(250%) translateY(140%) scale(3.2);
+        }
+
+        50% {
+        transform: translateX(250%) translateY(140%) scale(3.2);
+        }
+
+        100% {
+        transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+    
+    @keyframes logoAnimationLG {
+        0% {
+        transform: translateX(-1000%) translateY(200%) scale(4);
+        }
+
+        25% {
+        transform: translateX(250%) translateY(200%) scale(4);
+        }
+
+        50% {
+        transform: translateX(250%) translateY(200%) scale(4);
         }
 
         100% {
@@ -54,17 +108,53 @@
         }
     }
 
-    @keyframes logoAnimationMax {
+    @keyframes logoAnimationMaxVeryShort {
         0% {
-        transform: translateX(-1000%) translateY(280%) scale(4.75);
+        transform: translateX(-1000%) translateY(120%) scale(3.2);
         }
 
         25% {
-        transform: translateX(250%) translateY(280%) scale(4.75);
+        transform: translateX(250%) translateY(120%) scale(3.2);
         }
 
         50% {
-        transform: translateX(250%) translateY(280%) scale(4.75);
+        transform: translateX(250%) translateY(120%) scale(3.2);
+        }
+
+        100% {
+        transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+    
+    @keyframes logoAnimationMaxShort {
+        0% {
+        transform: translateX(-1000%) translateY(170%) scale(3.7);
+        }
+
+        25% {
+        transform: translateX(250%) translateY(170%) scale(3.7);
+        }
+
+        50% {
+        transform: translateX(250%) translateY(170%) scale(3.7);
+        }
+
+        100% {
+        transform: translateX(0%) translateY(0%) scale(1);
+        }
+    }
+    
+    @keyframes logoAnimationMax {
+        0% {
+        transform: translateX(-1000%) translateY(240%) scale(4.1);
+        }
+
+        25% {
+        transform: translateX(250%) translateY(240%) scale(4.1);
+        }
+
+        50% {
+        transform: translateX(250%) translateY(240%) scale(4.1);
         }
 
         100% {
@@ -73,55 +163,125 @@
     }
 
     .logo-opener {
+
         &.animate-done {
             animation: none !important;
         }
 
-        @media screen and (min-height:400px) and (max-height: 729px) {
-            animation: logoAnimationMid 4s cubic-bezier(0.002, 0, 1, 1);
-        }
-        
-        @media screen and (min-height:720px) and (max-height: 949px) {
-            animation: logoAnimationMid 4s cubic-bezier(0.002, 0, 1, 1);
-        }
-
-        @media screen and (min-height:950px) and (max-height: 1080px) {
-            animation: logoAnimationLG 4s cubic-bezier(0.002, 0, 1, 1);
-        }
-        
-        @media screen and (min-height: 1081px) {
-            animation: logoAnimationMax 4s cubic-bezier(0.002, 0, 1, 1);
-        }
-
         @media screen and (min-width: 481px) and (max-width: 649px) {
-            width: 5rem;
-            padding-top: 0.5rem;
-        }
-
-        @media screen and (min-width: 650px) and (max-width: 785px) {
             width: 5.5rem;
             padding-top: 0.625rem;
+        }  
+      
+      /* _______MidWidth______*/
+      
+        @media screen and (min-width: 650px) and (max-width: 864px) {
+            width: 5.65rem;
+            padding-top: 0.5rem;
+            animation: logoAnimationMidShort 4s ease-in-out;
         }
-
+      
+      /* _______LargeWidth______*/
         @media screen and (min-width: 786px) and (max-width: 864px) {
             width: 6.5rem;
             padding: 0.625rem;
+            animation: logoAnimationMidShort 4s ease-in-out;
         }
 
-        @media screen and (min-width: 865px) and (max-width: 1124px) {
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (max-height: 574px){
             width: 7.25rem;
             padding: 0.625rem;
+            animation: logoAnimationMidShort 4s ease-in-out;
         }
 
-        @media screen and (min-width: 1125px) and (max-width: 1364px) {
+        @media screen and (min-width: 865px) and (max-width: 1124px) and (min-height: 575px){
+            width: 7.25rem;
+            padding: 0.625rem;
+            animation: logoAnimationMidTall 4s ease-in-out;
+        }
+      
+      /* _______ExtraLargeWidth______*/
+      
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (max-height: 639px){
             width: 8.5rem;
             padding: 0.625rem;
+            animation: logoAnimationLGShort 4s ease-in-out;
         }
-
-        @media screen and (min-width: 1364px) {
+      
+        @media screen and (min-width: 1125px) and (max-width: 1364px) and (min-height: 640px){
+            width: 8.5rem;
+            padding: 0.625rem;
+            animation: logoAnimationLG 4s ease-in-out;
+        }
+      
+      /* _______MaxWidth______*/
+      
+        @media screen and (min-width: 1365px) and (max-height:715px){
             width: 10.5rem;
             padding: 0.625rem;
+            animation: logoAnimationMaxVeryShort 4s ease-in-out;
         }
+      
+        @media screen and (min-width: 1365px) and (max-height: 875px) and (min-height:715px){
+            width: 10.5rem;
+            padding: 0.625rem;
+            animation: logoAnimationMaxShort 4s ease-in-out;
+            animation-iteration-count: infinite;
+        }
+      
+        @media screen and (min-width: 1365px) and (min-height: 876px){
+            width: 10.5rem;
+            padding: 0.625rem;
+            animation: logoAnimationMax 4s ease-in-out;
+        }
+
+
+
+        // @media screen and (min-height:400px) and (max-height: 729px) {
+        //     animation: logoAnimationMid 4s ease-in-out;
+        // }
+        
+        // @media screen and (min-height:720px) and (max-height: 949px) {
+        //     animation: logoAnimationMid 4s ease-in-out;
+        // }
+
+        // @media screen and (min-height:950px) and (max-height: 1080px) {
+        //     animation: logoAnimationLG 4s ease-in-out;
+        // }
+        
+        // @media screen and (min-height: 1081px) {
+        //     animation: logoAnimationMax 4s ease-in-out;
+        // }
+
+        // @media screen and (min-width: 481px) and (max-width: 649px) {
+        //     width: 5rem;
+        //     padding-top: 0.5rem;
+        // }
+
+        // @media screen and (min-width: 650px) and (max-width: 785px) {
+        //     width: 5.5rem;
+        //     padding-top: 0.625rem;
+        // }
+
+        // @media screen and (min-width: 786px) and (max-width: 864px) {
+        //     width: 6.5rem;
+        //     padding: 0.625rem;
+        // }
+
+        // @media screen and (min-width: 865px) and (max-width: 1124px) {
+        //     width: 7.25rem;
+        //     padding: 0.625rem;
+        // }
+
+        // @media screen and (min-width: 1125px) and (max-width: 1364px) {
+        //     width: 8.5rem;
+        //     padding: 0.625rem;
+        // }
+
+        // @media screen and (min-width: 1365px) {
+        //     width: 10.5rem;
+        //     padding: 0.625rem;
+        // }
     }
 
     .logo-opener-container {
@@ -150,9 +310,8 @@
             margin-left: -28.25rem;
         }
 
-        @media screen and (min-width: 1364px) {
+        @media screen and (min-width: 1365px) {
             margin-left: -34.5rem;
         }
     }
 
-  
