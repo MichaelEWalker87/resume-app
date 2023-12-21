@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './ContactMe.scss';
 import { SITE_KEY, SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../../env';
@@ -23,20 +23,16 @@ function ContactMe() {
     message: "",
   });
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = `https://www.google.com/recaptcha/api.js?render=${SITE_KEY}`;
-    script.onload = () => window.grecaptcha.ready(() => {
-    });
-    document.body.appendChild(script);
-  }, []);
-
   const resetEmailSent = () => {
     setIsSuccessful(false)
   }
   
-  const handleChange = (value) => {
-    setToken(value);
+  const handleChange = async (value) => {
+    try {
+      setToken(value);
+    } catch (error) {
+      console.error("Error handling reCAPTCHA token:", error);
+    }
   };
 
   const handleHover = () => {
