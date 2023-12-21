@@ -16,7 +16,7 @@ function ZooButtons({ text, onClick, isActive, className }) {
 
   useEffect(() => {
     handleImageChange();
-  }, [isActive]); 
+  }, [isActive, handleImageChange]); 
 
   const handleImageChange = () => {
     if (isActive) {

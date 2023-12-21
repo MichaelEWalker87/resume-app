@@ -119,7 +119,7 @@ function ContactMe() {
               <div>
                 <h1 className='shoot-me-an-email'>Shoot me a Message</h1>
                   {!errorMessage === "" ? 
-                      <p className='error-submit-text'>{errorMessage}<a href={linkedInProfile} target="_blank">LinkedIn</a></p> :
+                      <p className='error-submit-text'>{errorMessage}<a rel="noreferrer" href={linkedInProfile} target="_blank">LinkedIn</a></p> :
                       "" 
                   }
                   <FormField
