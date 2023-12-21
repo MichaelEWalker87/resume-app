@@ -5,7 +5,6 @@ import ActiveButtonRed from '../../../assets/Buttons/ContactMeButtons/ContactBla
 import DisabledButton from '../../../assets/Buttons/ContactMeButtons/ContactBlanks/DisabledButton.png'
 import NormalButtonReg from '../../../assets/Buttons/ContactMeButtons/ContactBlanks/NormalButtonReg.png'
 
-import CalendlyIcon from '../../../assets/Buttons/ContactMeButtons/CalendlyIcon/CalendlyIcon.png'
 import CalendlyIconBlue from '../../../assets/Buttons/ContactMeButtons/CalendlyIcon/CalendlyIconBlue.png'
 import CalendlyIconLight from '../../../assets/Buttons/ContactMeButtons/CalendlyIcon/CalendlyIconLight.png'
 import CalendlyIconDisabled from '../../../assets/Buttons/ContactMeButtons/CalendlyIcon/CalendlyIconDisabled.png'

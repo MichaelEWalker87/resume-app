@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from '../Link/Link';
 import './Footer.scss';
-import Email from '../../assets/Footer/Email.svg';
 import LinkedIn from '../../assets/Footer/LinkedIn.svg';
 import Signature from '../../assets/Footer/Signature.svg';
 import CalendlyIconBlueButton from '../../assets/Footer/CalendlyIconBlueButton.svg';

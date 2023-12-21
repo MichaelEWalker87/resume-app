@@ -15,7 +15,6 @@ function Letter() {
     const [removeEffectsThree, setRemoveEffectsThree] = useState(false);
     const [removeEffectsFour, setRemoveEffectsFour] = useState(false);
     const [removeEffectsFive, setRemoveEffectsFive] = useState(false);
-    const text = "Email Sent"; 
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {

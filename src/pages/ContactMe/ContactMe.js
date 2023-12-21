@@ -118,7 +118,7 @@ function ContactMe() {
               <ThankYou onClick={resetEmailSent}/> : 
               <div>
                 <h1 className='shoot-me-an-email'>Shoot me a Message</h1>
-                  {!errorMessage == "" ? 
+                  {!errorMessage === "" ? 
                       <p className='error-submit-text'>{errorMessage}<a href={linkedInProfile} target="_blank">LinkedIn</a></p> :
                       "" 
                   }
@@ -180,7 +180,7 @@ function ContactMe() {
         <div className='background-blue-bear'>
             <img
                 src={BlueBear}
-                alt='zoo entrance image'
+                alt='zoo entrance'
                 className='blue-bear-img'
             />
         </div>

@@ -27,7 +27,7 @@ function Link({ to, children, className, activeClassName }) {
     };
 
     return (
-        <a className={linkClasses} href={to} onClick={handleClick}>
+        <a className={linkClasses} href={to} onClick={handleClick} rel="noreferrer">
             {children}
         </a>
     );
