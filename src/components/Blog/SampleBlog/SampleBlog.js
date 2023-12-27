@@ -21,8 +21,6 @@ function SampleBlog(props) {
     return (
         <div 
             className='sample-blog-container'
-            onMouseEnter={handleHover}
-            onMouseLeave={handleLeave}
         >
             <iframe
                 className="blog-card"
@@ -33,7 +31,10 @@ function SampleBlog(props) {
                 allowFullScreen
                 seamless
             />
-            <div className='read-me-blog-button'>
+            <div className='read-me-blog-button' 
+                onMouseEnter={handleHover}
+                onMouseLeave={handleLeave}
+            >
                 <ReadMeButton
                     direction="up"
                     className={`read-me-button`}
