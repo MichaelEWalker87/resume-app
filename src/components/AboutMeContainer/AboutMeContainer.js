@@ -33,28 +33,34 @@ function AboutMeContainer(props) {
           className='about-me-image' 
         />
         <p className='about-me-body' > 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Nunc mi ipsum faucibus vitae aliquet. Accumsan in nisl nisi scelerisque eu. 
-            Velit aliquet sagittis id consectetur purus ut faucibus. 
-            Eget gravida cum sociis natoque penatibus. Duis tristique sollicitudin nibh sit amet. 
-            Ante in nibh mauris cursus mattis molestie a. 
-            Ipsum dolor sit amet consectetur adipiscing. Placerat in egestas erat imperdiet sed. 
-            Varius vel pharetra vel turpis nunc eget lorem dolor. 
-            Imperdiet massa tincidunt nunc pulvinar. In nisl nisi scelerisque eu ultrices vitae 
-            auctor eu augue. Pulvinar sapien et ligula ullamcorper malesuada. 
-            Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. 
-            Lectus arcu bibendum at varius. Hendrerit dolor magna eget est. 
-            Massa id neque aliquam vestibulum morbi blandit cursus. A cras semper auctor neque 
-            vitae tempus quam pellentesque. Quam adipiscing vitae proin sagittis nisl 
-            rhoncus mattis rhoncus. Ut tortor pretium viverra suspendisse potenti nullam.
-            Mus mauris vitae ultricies leo integer. Id porta nibh venenatis cras sed felis. 
-            Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Semper 
-            feugiat nibh sed pulvinar. Vitae nunc sed velit dignissim sodales ut eu sem. 
-            Vel quam elementum pulvinar etiam non quam lacus suspendisse faucibus. Pretium 
-            quam vulputate dignissim suspendisse. Adipiscing enim eu turpis egestas pretium 
-            aenean pharetra magna ac. Orci sagittis eu volutpat odio facilisis mauris sit amet. 
-            Eget magna fermentum iaculis eu non.
+          <p>A passionate and results-oriented product and technology leader with a proven track record of driving user engagement, streamlining processes, and delivering impactful solutions across diverse industries. Skilled in both the technical and creative aspects of product development, with expertise in product vision & strategy, user research & analysis, agile methodologies, cross-functional collaboration, and technical communication.</p>
+          <p><strong>Highlights:</strong></p>
+          <ul>
+            <li><strong>Product Manager:</strong> Increased B2B user engagement by 40%, reduced support tickets by 86%, and achieved 100% user adoption within 3 months, while driving significant business expansion at Suited Connector.</li>
+            <li><strong>Mobile Engineer:</strong> Built a non-profit mobile platform with 8,000 users and a 4.5-star rating, and spearheaded a security overhaul within a medical app at TroutHouseTech.</li>
+            <li><strong>Front-End Engineer:</strong> Built 16 diverse applications, mastered JavaScript, React, and other essential technologies, and thrived in collaborative environments at Turing School of Software & Design.</li>
+            <li><strong>Technical Experience:</strong> Extensive background in IT solutions, hardware, infrastructure, security, and ITSM, with a 95% success rate in problem resolution and a knack for exceeding client expectations at Istonish.</li>
+            <li><strong>Market & Customer Centric:</strong> Launched and scaled T-Mobile's TV Entertainment department in new markets, conducted over 1,000 user interviews to inform product development, and reduced churn rate by 15% through research-driven marketing campaigns.</li>
+          </ul>
+          <p><strong>Additional Skills:</strong></p>
+          <ul>
+            <li>Agile Methodologies (Scrum, Kanban)</li>
+            <li>Technical Writing & API Documentation</li>
+            <li>JIRA & Asana Proficient</li>
+            <li>UI/UX Design & Mockups</li>
+            <li>Data Analysis & User Metrics</li>
+            <li>HTML, CSS, React Router, Cypress</li>
+            <li>DOM Manipulation & Test-Driven Development</li>
+            <li>Project Management & Collaboration</li>
+            <li>Communication & Effective Presentation</li>
+            <li>Independent Design Services & Client Satisfaction</li>
+          </ul>
+        <p><strong>Passionate about:</strong></p>
+        <ul>
+          <li>Building user-centric products that solve real problems</li>
+          <li>Fostering cross-functional collaboration and communication</li>
+          <li>Continuous learning and embracing new challenges</li>
+        </ul>
         </p>
       </div>
     </div>

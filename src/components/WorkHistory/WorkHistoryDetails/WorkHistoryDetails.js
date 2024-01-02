@@ -15,6 +15,12 @@ function WorkHistoryDetails(props) {
   const handleCloseClick = () => {
     onClose(); 
   };
+  
+
+  const formattedDetails = details
+  .replace(/\n/g, '<br />')  
+  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');  
+
 
   return (
     <div className='background'>
@@ -32,7 +38,7 @@ function WorkHistoryDetails(props) {
                 <p className='job-dates'>{dates}</p>
             </div>   
             <div className='job-description-container'> 
-                <p className='job-description'>{details}</p>
+                <div className='job-description' dangerouslySetInnerHTML={{ __html: formattedDetails }} />
             </div>
         </div>
         <CloseButton className="close-button" onClick={handleCloseClick} />

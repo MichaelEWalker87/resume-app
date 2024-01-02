@@ -206,18 +206,20 @@
     @include h4-reg;
     @media screen and (max-width: 865px) {
         font-size: 16px;
-        line-height: 25px;
+        line-height: 22px;
     }
     @media screen and (min-width: 865px) and (max-width: 1124px) {
         font-size: 14px;
         line-height: 28px;
       @media (min-height: 575px) {
         @include h4-reg;
+        line-height: 22px;
       }
     }
       @media screen and (min-width: 1365px) {
         @media (min-height: 876px) {
             @include h3-reg;
+            line-height:32px;
         }
       }
 
