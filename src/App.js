@@ -56,9 +56,8 @@ function App() {
             {showWarning ? (
                 <div className='error-mobile-sizing'>
                     <div className="warning-message">
-                        Heads up! I am still polishing this corner of the portfolio for smaller screens. 
-                        Please readjust your screen size and try again for the full experience.
-                    </div>
+                        Hey there!  I'm still buffing this corner of my portfolio for smaller screens. For the full, shiny experience, please adjust your screen size and give it another go. Or, feel free to check out my LinkedIn profile or hop over to Calendly to book a meeting with me directly!                    </div>
+                    <Footer /> 
                     <LoadIcon title="Size Error"/> 
                 </div>
             ) : (

@@ -44,4 +44,26 @@
         @include h4-reg-dm;
         font-size: 12px;
         margin-bottom: 0.55rem;
+        @media (max-width: 420px) {
+            line-height: 15px;
+        }
+        @media (max-width: 480px) and (max-height: 439px) {
+            line-height: 15px;
+        }
+        @media (min-width: 481px) and (max-width: 649px) {
+            line-height: 15px;
+        }
+        @media (min-width: 650px) and (max-height: 465px) {
+            line-height: 15px;
+        }
+        @media (min-width: 865px) and (max-height: 475px) {
+            line-height: 15px;
+        }
+        @media (min-width: 1125px) and (max-height: 495px) {
+            line-height: 15px;
+        }
+        @media (min-width: 1365px) and (max-height: 585px) {
+            line-height: 15px;
+        }
+  
     }

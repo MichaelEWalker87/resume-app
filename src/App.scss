@@ -18,7 +18,7 @@ body {
 }
 
 .warning-message{
-    @include h3-bold;
+    @include h4-bold;
     color: $Attention-M;
     width: 40%;
     align-self: center;
