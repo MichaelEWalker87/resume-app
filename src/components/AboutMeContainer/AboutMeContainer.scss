@@ -82,13 +82,8 @@
 } 
 
 .about-me-body {
-    text-align: justify;
+    text-align: left;
     margin-inline: 1rem;
     margin-bottom: 1rem; 
-    @include h4-reg-dm
-}
-
-.about-me-intro {
-    text-align: left;
     @include h4-reg-dm
 }
