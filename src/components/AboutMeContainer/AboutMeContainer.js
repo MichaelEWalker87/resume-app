@@ -32,8 +32,8 @@ function AboutMeContainer(props) {
           alt='A portrait of me'
           className='about-me-image' 
         />
-        <p className='about-me-body' > 
-          <p>A passionate and results-oriented product and technology leader with a proven track record of driving user engagement, streamlining processes, and delivering impactful solutions across diverse industries. Skilled in both the technical and creative aspects of product development, with expertise in product vision & strategy, user research & analysis, agile methodologies, cross-functional collaboration, and technical communication.</p>
+        <div className='about-me-body' > 
+          <p className='about-me-intro'>A passionate and results-oriented product and technology leader with a proven track record of driving user engagement, streamlining processes, and delivering impactful solutions across diverse industries. Skilled in both the technical and creative aspects of product development, with expertise in product vision & strategy, user research & analysis, agile methodologies, cross-functional collaboration, and technical communication.</p>
           <p><strong>Highlights:</strong></p>
           <ul>
             <li><strong>Product Manager:</strong> Increased B2B user engagement by 40%, reduced support tickets by 86%, and achieved 100% user adoption within 3 months, while driving significant business expansion at Suited Connector.</li>
@@ -61,7 +61,7 @@ function AboutMeContainer(props) {
           <li>Fostering cross-functional collaboration and communication</li>
           <li>Continuous learning and embracing new challenges</li>
         </ul>
-        </p>
+        </div>
       </div>
     </div>
   );
